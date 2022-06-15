@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+/*  Navbar  */
+
+.Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+    background-color: transparent;
+    color:white;
+    position: fixed;
+}
+
+.Navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0em 2em;
+    cursor: pointer;
+    color: white;      
+    text-decoration: none;
+}
+
+.Navbar a:hover{
+  color:  #ab2a3e;
+}
+
+/* Header */
+
+.Header {
+  display: grid;
+  grid-template-areas: '. title btn .';
+  height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+.Header-title{
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+.Name {
+  display: flex;
+}
+
+/* Body */
+
+body{
+  height: 100vh;
+  background-color: black;
+}
+
+body .Proyects{
+  display: flex;
+  justify-content: space-around;
+}
+
+body .Proyects span{  
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: #ab2a3e;
+  padding: 3em;
+}
+
+/* Footer */
+
+.Contact-container{
+  background: black;
+  padding: 40px 0;
+}
+
+.Contact-container h1,h2 { 
+  color: #ab2a3e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Contact-container h1{
+  max-width: 600px;
+  text-align: center;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.Contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.Contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.Contact-form-text:focus{
+  box-shadow: 0 0 5px 1px white;
+}
+
+textarea.Contact-form-text{
+  resize: none;
+  height: 120px;
+}
+
+.Contact-form-btn{
+  float: right;
+  border: 0;
+  background:  #ab2a3e;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Contact-form-btn:hover{
+  background:#cf4d61;
+  color:white;
+}
+
+.Border {
+  width: 100px;
+  height: 5px;
+  background: #ab2a3e;
+  margin: 40px auto;
+}
+
+.Social-icons {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  grid-area: social;
+  height: 50px;
+}
+
+.Social-icons a {
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
