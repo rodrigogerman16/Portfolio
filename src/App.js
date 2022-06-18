@@ -49,42 +49,49 @@ function App() {
             <button><FontAwesomeIcon icon={faRotateBack} /></button>
           </div>
         </div>
-
       </header>
 
       {/* Body */}
       <div className='Body' id="work">
         <div className='Proyects'>
-          <span>
+          <div className='Proyects-card card1'>
+            <div className='Proyects-img'>
+              <img src='mypiroska.png' alt='mypiroska'/>
+            </div>
+            <div className='Proyects-description'>
+              <h3>My Piroska</h3>
+              <p>Lore ipsum</p>
+            </div>
+          </div>
+          <div className='Proyects-card card2'>
+            <div className='Proyects-img'>
+              <img src='belenpage.png' alt='belenpage'/>
+            </div>
+            <div className='Proyects-description'>
+              <h3>Belen Tejedor Landing Page</h3>
+              <p>Lore ipsum</p>
+            </div>
+          </div>
+          <div className='Proyects-card card3'>
+            <div className='Proyects-img'>
+              <img src='mypiroska.png' alt='geoquizz'/>
+            </div>
+            <div className='Proyects-description'>
+              <h3>GeoQuiz</h3>
+              <p>Lore ipsum</p>
+            </div>
+          </div>
+          <div className='Proyects-card card4'>
             <div className='Proyects-img'>
               <img src='mypiroska.png' />
             </div>
-            <h4>My Piroska</h4>
-            <p>Lore ipsum</p>
-          </span>
-          <span>
-            <div className='Proyects-img'>
-              <img src='belenpage.png' />
+            <div className='Proyects-description'>
+              <h3>My Piroska</h3>
+              <p>Lore ipsum</p>
             </div>
-            <h4>Belen Tejedor Page</h4>
-            <p>Lore ipsum</p>
-          </span>
-          <span>
-            <div className='Proyects-img'>
-              <img src='mypiroska.png' />
-            </div>
-            <h4>Geo Quizz</h4>
-            <p>Lore ipsum</p>
-          </span>
-          <span>
-            <div className='Proyects-img'>
-              <img src='mypiroska.png' />
-            </div>
-            <h4>Weather App</h4>
-            <p>Lore ipsum</p>
-          </span>
-        </div>
-      </div>
+          </div>
+       </div>
+       </div>
 
       {/* Footer */}
       <div className='Footer' id="footer">
