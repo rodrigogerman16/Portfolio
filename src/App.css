@@ -30,12 +30,26 @@
 
 /* Header */
 
-.Header {
+.Header-initial {
   display: grid;
   grid-template-areas: '. title btn .';
+  grid-template-columns: 100px 2fr 2fr 100px;
   height: 100vh;
   color: white;
   background-color: black;
+  position: initial;
+  visibility: visible;
+}
+
+.Header-skills {
+  display: grid;
+  grid-template-areas: '. title btn .';
+  grid-template-columns: 100px 2fr 2fr 100px;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  position: absolute;
+  visibility: hidden;
 }
 
 .Header-title{
@@ -46,28 +60,87 @@
   font-size: xx-large;
 }
 
+.Header-title h2{
+  color: #ab2a3e;
+}
+
 .Name {
   display: flex;
 }
 
-/* Body */
+.Headerbtn{
+  grid-area: btn;
+  width: 100%;  
+  align-self: center;
+  text-align: center;
+}
 
-body{
+.Headerbtn button{
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  background-color: #ab2a3e;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease-out;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  color: white;
+}
+
+.Headerbtn button:hover{
+  background-color: #cf4d61;
+}
+
+/* Body */
+.Body{
+  height: 100vh;
+}
+
+.Proyects{
   height: 100vh;
   background-color: black;
-}
-
-body .Proyects{
-  display: flex;
-  justify-content: space-around;
-}
-
-body .Proyects span{  
-  width: 100%;
-  max-width: 400px;
-  max-height: 400px;
-  background-color: #ab2a3e;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  gap: 2em;
   padding: 3em;
+  align-content: center;
+  justify-content: center;
+}
+
+.Proyects span{  
+  width: 100%;
+  height: 300px;
+  max-width: 235px;
+  background-color: #ab2a3e;
+  padding: 1em;  
+  border-radius: 15px;
+  justify-self: center;
+}
+
+.Proyects span:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.Proyects span h4{  
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: medium;
+}
+
+.Proyects span div img{  
+  width: 100%;
+  max-width: 200px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.Proyects span p{  
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: small;
 }
 
 /* Footer */
@@ -77,16 +150,13 @@ body .Proyects span{
   padding: 40px 0;
 }
 
-.Contact-container h1,h2 { 
-  color: #ab2a3e;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .Contact-container h1{
   max-width: 600px;
   text-align: center;
   padding: 0 10px;
   margin: auto;
+  color: #ab2a3e;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Contact-form{
