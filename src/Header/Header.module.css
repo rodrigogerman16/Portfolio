@@ -1,0 +1,74 @@
+.HeaderInitial {
+    display: grid;
+    grid-template-areas: '. title btn .';
+    grid-template-columns: 100px 2fr 2fr 100px;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    position: initial;
+  }
+  
+.HeaderSkills {
+  display: grid;
+  grid-template-areas: '. title btn .';
+  grid-template-columns: 100px 2fr 2fr 100px;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  position: initial;
+}
+
+.HeaderTitle{
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  visibility: visible;
+}
+
+.HeaderTitle h2{
+  color: #ab2a3e;
+}
+
+.HeaderBtn{
+  grid-area: btn;
+  width: 100%;  
+  align-self: center;
+  text-align: center;
+}
+
+.HeaderBtn button{
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  background-color: #ab2a3e;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease-out;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  color: white;
+}
+
+.HeaderBtn button:hover{
+  background-color: #cf4d61;
+}
+
+@media (max-width: 768px){
+  .HeaderInitial {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'title''btn';
+    align-content: center;
+    gap: 2em;
+    height: 100vh;
+  }
+  .HeaderSkills {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'title''btn';
+    align-content: center;
+    gap: 2em;
+    height: 100vh;
+  }
+}
