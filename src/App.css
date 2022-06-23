@@ -4,95 +4,6 @@
   box-sizing: border-box; 
 }
 
-/*  Navbar  */
-
-.Navbar {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 2em;
-    background-color: transparent;
-    color:white;
-    position: fixed;
-}
-
-.Navbar a {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0em 2em;
-    cursor: pointer;
-    color: white;      
-    text-decoration: none;
-}
-
-.Navbar a:hover{
-  color:  #ab2a3e;
-}
-
-/* Header */
-
-.Header-initial {
-  display: grid;
-  grid-template-areas: '. title btn .';
-  grid-template-columns: 100px 2fr 2fr 100px;
-  height: 100vh;
-  color: white;
-  background-color: black;
-  position: initial;
-  visibility: visible;
-}
-
-.Header-skills {
-  display: grid;
-  grid-template-areas: '. title btn .';
-  grid-template-columns: 100px 2fr 2fr 100px;
-  height: 100vh;
-  color: white;
-  background-color: black;
-  position: absolute;
-  visibility: hidden;
-}
-
-.Header-title{
-  grid-area: title;
-  align-self: center;
-  justify-self: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-}
-
-.Header-title h2{
-  color: #ab2a3e;
-}
-
-.Name {
-  display: flex;
-}
-
-.Headerbtn{
-  grid-area: btn;
-  width: 100%;  
-  align-self: center;
-  text-align: center;
-}
-
-.Headerbtn button{
-  width: 100%;
-  max-width: 100px;
-  height: 100px;
-  background-color: #ab2a3e;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms ease-out;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  color: white;
-}
-
-.Headerbtn button:hover{
-  background-color: #cf4d61;
-}
-
 /* Body */
 .Body{
   height: 100%;
@@ -113,6 +24,7 @@
   background-color: #1c1b29;
   border-radius: 20px;
   box-shadow:  0 0 30px rgba(0,0,0,18);
+  text-decoration: none;
 }
 
 .Proyects div:hover{
@@ -253,3 +165,4 @@ textarea.Contact-form-text{
   justify-self: center;
   align-self: center;
 }
+
