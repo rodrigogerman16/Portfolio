@@ -1,60 +1,26 @@
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faRotateBack, faPlay } from '@fortawesome/free-solid-svg-icons';
 import Form from './Components/Form.js';
-import React, { useState } from 'react';
+import NavBar from './NavBar/NavBar';
+import Header from './Header/Header';
 
-function App() {  
-
-  const [toggle, setToggle] = useState(true);
-
-  const switchHeader = () => {
-    setToggle(!toggle);
-  }
-
+function App() { 
   return (
     <div className="App">
       
       {/* Navbar */}
-      <div>
-        <ul className='Navbar'>
-          <a href="#header">About me</a>
-          <a href="#work">Work</a>
-          <a href="#footer">Contact</a>        
-        </ul>
-      </div>
+      <NavBar/>
 
       {/* Header */}
-      <header className='Header' id="header">
-
-        <div className='Header-initial'>
-          <div className='Header-title'>
-            <div><h2>Hi,</h2></div>
-            <div className='Name'><h2>I'm Rodrigo,</h2></div>
-            <div className='Description'><p>Front End Developer</p></div> 
-          </div>
-          <div className='Headerbtn'>
-            <button onClick={switchHeader}><FontAwesomeIcon icon={faPlay}/></button>
-          </div>
-        </div>
-
-        <div className='Header-skills'>
-          <div className='Header-title'>
-            <div><h2>I like,</h2></div>
-            <div className='Name'><h2>To create,</h2></div>
-            <div className='Description'><p>Amazing experiences</p></div> 
-          </div>
-          <div className='Headerbtn'>
-            <button><FontAwesomeIcon icon={faRotateBack} /></button>
-          </div>
-        </div>
+      <header className="Header" id="header">        
+        <Header/>        
       </header>
 
       {/* Body */}
       <div className='Body' id="work">
         <div className='Proyects'>
-          <div className='Proyects-card card1'>
+          <a className='Proyects-card card1' href='https://mypiroska.com/index.html'>
             <div className='Proyects-img'>
               <img src='mypiroska.png' alt='mypiroska'/>
             </div>
@@ -62,8 +28,8 @@ function App() {
               <h3>My Piroska</h3>
               <p>Lore ipsum</p>
             </div>
-          </div>
-          <div className='Proyects-card card2'>
+          </a>
+          <a className='Proyects-card card2' href='https://belentejedor.vercel.app/'>
             <div className='Proyects-img'>
               <img src='belenpage.png' alt='belenpage'/>
             </div>
@@ -71,7 +37,7 @@ function App() {
               <h3>Belen Tejedor Landing Page</h3>
               <p>Lore ipsum</p>
             </div>
-          </div>
+          </a>
           <div className='Proyects-card card3'>
             <div className='Proyects-img'>
               <img src='mypiroska.png' alt='geoquizz'/>
