@@ -1,7 +1,7 @@
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import Form from './Components/Form.js';
+import Form from './Components/Footer.js';
 import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
 
