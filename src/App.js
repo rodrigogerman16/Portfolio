@@ -4,6 +4,7 @@ import { faLinkedin, faGithub, faInstagram, faTwitter } from "@fortawesome/free-
 import Form from './Footer/Form.js';
 import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
+import Work from './Body/Work';
 
 function App() { 
   return (
@@ -18,46 +19,7 @@ function App() {
       </header>
 
       {/* Body */}
-      <div className='Body' id="work">
-        <div className='Proyects'>
-          <a className='Proyects-card card1' href='https://mypiroska.com/index.html'>
-            <div className='Proyects-img'>
-              <img src='mypiroska.png' alt='mypiroska'/>
-            </div>
-            <div className='Proyects-description'>
-              <h3>My Piroska</h3>
-              <p>Lore ipsum</p>
-            </div>
-          </a>
-          <a className='Proyects-card card2' href='https://belentejedor.vercel.app/'>
-            <div className='Proyects-img'>
-              <img src='belenpage.png' alt='belenpage'/>
-            </div>
-            <div className='Proyects-description'>
-              <h3>Belen Tejedor Landing Page</h3>
-              <p>Lore ipsum</p>
-            </div>
-          </a>
-          <div className='Proyects-card card3'>
-            <div className='Proyects-img'>
-              <img src='mypiroska.png' alt='geoquizz'/>
-            </div>
-            <div className='Proyects-description'>
-              <h3>GeoQuiz</h3>
-              <p>Lore ipsum</p>
-            </div>
-          </div>
-          <div className='Proyects-card card4'>
-            <div className='Proyects-img'>
-              <img src='mypiroska.png' />
-            </div>
-            <div className='Proyects-description'>
-              <h3>My Piroska</h3>
-              <p>Lore ipsum</p>
-            </div>
-          </div>
-       </div>
-       </div>
+      <Work/>
 
       {/* Footer */}
       <div className='Footer' id="footer">
