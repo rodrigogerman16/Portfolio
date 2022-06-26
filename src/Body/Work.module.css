@@ -98,6 +98,10 @@ background-image: linear-gradient(135deg, #ff3b1d, #f39477);
   text-decoration: none;
 }
 
+.WorkSliderFlex{
+  display: flex;
+}
+
 .WorkItem img{
   height: 350px;
   pointer-events: none;

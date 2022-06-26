@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const WorkMobile = () =>{
     return(
     <motion.div className={classes.WorkSliderContainer}>
-      <motion.div  drag='x' dragConstraints={{right: 0, left: -550}}>
+      <motion.div className={classes.WorkSliderFlex} drag='x' dragConstraints={{right: 0, left: -550}}>
         {Work.map(Work => (
           <motion.div className={classes.WorkSlider }>
             <motion.div className={classes.WorkImg }>
