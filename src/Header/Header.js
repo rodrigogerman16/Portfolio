@@ -16,21 +16,33 @@ const Header = () => {
       
         <div className={classes.HeaderInitial}>
           {isActive && <div className={classes.HeaderTitle}>
-            <div><h2>Hi,</h2></div>
-            <div><h2>I'm Rodrigo,</h2></div>
+            <div><h2>Hi</h2></div>
+            <div><h2>I'm Rodrigo</h2></div>
             <div><p>Front End Developer</p></div> 
           </div>
           }
 
           {!isActive && <div className={classes.HeaderTitle}>
-            <div><h2>I like,</h2></div>
-            <div><h2>To create,</h2></div>
+            <div><h2>I like</h2></div>
+            <div><h2>To create</h2></div>
             <div><p>Amazing experiences</p></div> 
           </div>}
           
           <div className={classes.HeaderBtn} onClick={handleClick}>
                 {isActive && <button><FontAwesomeIcon icon={faPlay}/></button>}
-                {!isActive && <button><FontAwesomeIcon icon={faRotateBack}/></button>}
+                
+                {!isActive && 
+                <div className={classes.BubbleContainer}>    
+                 <button><FontAwesomeIcon icon={faRotateBack}/></button>             
+                  <div className={classes.Bubble}><p>Jquery</p></div>
+                  <div className={classes.Bubble}><p>React</p></div>
+                  <div className={classes.Bubble}><p>JavaScript</p></div>
+                  <div className={classes.Bubble}><p>Css</p></div>
+                  <div className={classes.Bubble}><p>Html</p></div>
+                  <div className={classes.Bubble}><p>Git</p></div>
+                  <div className={classes.Bubble}><p>Github</p></div>
+                  <div className={classes.Bubble}><p>Vercel</p></div>
+                </div>}
             </div>
         </div>
       

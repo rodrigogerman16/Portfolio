@@ -5,7 +5,7 @@ const WorkDesktop = () =>
     return(
         <div className={classes.Body} id="work">
         <div className={classes.Work}>
-          <a className={classes.WorkCard && classes.card1} href='https://mypiroska.com/index.html'>
+          <a className={classes.WorkCard} href='https://mypiroska.com/index.html'>
             <div className={classes.WorkImg}>
               <img src='mypiroska.png' alt='mypiroska'/>
             </div>
@@ -14,7 +14,7 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </a>
-          <a className={classes.WorkCard && classes.card2} href='https://belentejedor.vercel.app/'>
+          <a className={classes.WorkCard} href='https://belentejedor.vercel.app/'>
             <div className={classes.WorkImg}>
               <img src='belenpage.png' alt='belenpage'/>
             </div>
@@ -23,7 +23,7 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </a>
-          <div className={classes.WorkCard && classes.card3}>
+          <div className={classes.WorkCard}>
             <div className={classes.WorkImg}>
               <img src='mypiroska.png' alt='geoquizz'/>
             </div>
@@ -32,12 +32,12 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </div>
-          <div className={classes.WorkCard && classes.card4}>
+          <div className={classes.WorkCard}>
             <div className={classes.WorkImg}>
               <img src='mypiroska.png' />
             </div>
             <div className={classes.WorkDescription}>
-              <h3>My Piroska</h3>
+              <h3>Weather App</h3>
               <p>Lore ipsum</p>
             </div>
           </div>

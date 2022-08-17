@@ -9,7 +9,6 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 grid-gap: 40px;
 padding: 20px;
-place-items: center center;
 }
 
 .WorkCard{  
@@ -63,17 +62,30 @@ border-radius: 20px 20px 0 0;
 opacity: 0.6;
 }
 
-.card1>.WorkImg::after{
-background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+.WorkCard:nth-child(1) .WorkImg::after{
+  background-image: linear-gradient(135deg, #0100ec, #fb36f4);
 }
-.card2>.WorkImg::after{
-background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+.WorkCard:nth-child(2) .WorkImg::after{
+  background-image: linear-gradient(135deg, #ffab1d, #f8501c);
 }
-.card3>.WorkImg::after{
-background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+.WorkCard:nth-child(3) .WorkImg::after{
+  background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
 }
-.card4>.WorkImg::after{
-background-image: linear-gradient(135deg, #ff3b1d, #f39477);
+.WorkCard:nth-child(4) .WorkImg::after{
+  background-image: linear-gradient(135deg, #70e4aa, #00ff33);
+}
+
+.WorkSlider:nth-child(1) .WorkImg::after{
+  background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+}
+.WorkSlider:nth-child(2) .WorkImg::after{
+  background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+}
+.WorkSlider:nth-child(3) .WorkImg::after{
+  background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+.WorkSlider:nth-child(4) .WorkImg::after{
+  background-image: linear-gradient(135deg, #70e4aa, #00ff33);
 }
 
 .WorkSliderContainer{
@@ -102,20 +114,6 @@ background-image: linear-gradient(135deg, #ff3b1d, #f39477);
   display: flex;
 }
 
-.WorkItem img{
-  height: 350px;
-  pointer-events: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
-  width: 100%;
-  display: block;
-  border-radius: 20px 20px 0 0;
-}
-
-.WorkItem {
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
-
 @media (max-width: 768px){
   .WorkSliderContainer{
       visibility: visible;
@@ -127,4 +125,10 @@ background-image: linear-gradient(135deg, #ff3b1d, #f39477);
     visibility: hidden;
     position: fixed;
   }
+
+  .WorkImg{
+    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+    border-radius: 20px 20px 0px 0px;
+  }
+
 }
