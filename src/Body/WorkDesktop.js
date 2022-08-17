@@ -25,7 +25,7 @@ const WorkDesktop = () =>
           </a>
           <div className={classes.WorkCard}>
             <div className={classes.WorkImg}>
-              <img src='mypiroska.png' alt='geoquizz'/>
+              <img src='quizapp.png' alt='geoquizz'/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>GeoQuiz</h3>
@@ -34,7 +34,7 @@ const WorkDesktop = () =>
           </div>
           <div className={classes.WorkCard}>
             <div className={classes.WorkImg}>
-              <img src='mypiroska.png' />
+              <img src='weatherapp.png' />
             </div>
             <div className={classes.WorkDescription}>
               <h3>Weather App</h3>
