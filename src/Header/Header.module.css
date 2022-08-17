@@ -1,126 +1,33 @@
 .HeaderInitial {
     display: grid;
-    grid-template-areas: '. title btn .';
-    grid-template-columns: 100px 2fr 2fr 100px;
     height: 100vh;
     color: white;
     background-color: black;
     position: initial;
   }
-  
-.HeaderSkills {
-  display: grid;
-  grid-template-areas: '. title btn .';
-  grid-template-columns: 100px 2fr 2fr 100px;
-  height: 100vh;
-  color: white;
-  background-color: black;
-  position: initial;
-}
 
 .HeaderTitle{
-  grid-area: title;
   align-self: center;
-  justify-self: center;
+  justify-self: left;
+  margin: 0 5em;
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   visibility: visible;
 }
 
+
 .HeaderTitle h2{
   color: #ab2a3e;
 }
 
-.HeaderBtn{
-  grid-area: btn;
-  width: 100%;  
-  align-self: center;
-  text-align: center;
-}
-
-.HeaderBtn button{
-  width: 100%;
-  max-width: 70px;
-  height: 70px;
-  background-color: #ab2a3e;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 250ms ease-out;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  color: white;
-}
-
-.HeaderBtn button:hover{
-  background-color: #cf4d61;
-}
-
-.BubbleContainer{
-  grid-area: btn;
-}
-
-.Bubble {
-  position : relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height : 80px;
-  width : 80px;
-  background : black;
-  border-radius : 50%;
-  animation: spin 6s infinite;
-  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50%{
-    transform: translateY(40px);
-  }
-  100%{
-    transform: translateY(-40px);
-  }
-}
-
-.BubbleContainer{
-  display: grid;
-  grid-area: bubbles;
-  grid-template-areas: 
-  "bubble1 bubble2 bubble3 bubble4 bubble5 bubble6 bubble7 bubble8 btn";
-  gap:2em;
-}
-
-.HeaderBtn button{grid-area: btn;}
-.BubbleContainer > div:nth-of-type(1){grid-area:bubble1}
-.BubbleContainer > div:nth-of-type(2){grid-area:bubble2}
-.BubbleContainer > div:nth-of-type(3){grid-area:bubble3}
-.BubbleContainer > div:nth-of-type(4){grid-area:bubble4}
-.BubbleContainer > div:nth-of-type(5){grid-area:bubble5}
-.BubbleContainer > div:nth-of-type(6){grid-area:bubble6}
-.BubbleContainer > div:nth-of-type(7){grid-area:bubble7}
-.BubbleContainer > div:nth-of-type(8){grid-area:bubble8}
 
 @media (max-width: 768px){
   .HeaderInitial {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'title''btn';
     align-content: center;
-    gap: 2em;
     height: 100vh;
+  }  
+
+  .HeaderTitle{
+    margin: 0 1em;
   }
-
-  
-
-  .HeaderBtn{
-    display: grid;
-    grid-template-areas: 
-    "bubbles bubbles bubbles"
-    "bubbles btn bubbles"
-    "bubbles bubbles bubbles";
-  }
-  
-
 }
