@@ -33,6 +33,7 @@ clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 width: 100%;
 display: block;
 border-radius: 20px 20px 0 0;
+height: 320px;
 }
 
 .WorkDescription{  
@@ -131,4 +132,7 @@ opacity: 0.6;
     border-radius: 20px 20px 0px 0px;
   }
 
+  .WorkImg img{
+    height: 250px;
+    }
 }
