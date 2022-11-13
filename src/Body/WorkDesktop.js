@@ -23,7 +23,7 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </a>
-          <div className={classes.WorkCard}>
+          <div className={classes.WorkCard} href='https://geoquiz-mpgsgymel-rodrigogerman16.vercel.app/'>
             <div className={classes.WorkImg}>
               <img src='quizapp.png' alt='geoquizz'/>
             </div>
@@ -32,12 +32,21 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </div>
-          <div className={classes.WorkCard}>
+          <div className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/'>
             <div className={classes.WorkImg}>
               <img src='weatherapp.png' />
             </div>
             <div className={classes.WorkDescription}>
               <h3>Weather App</h3>
+              <p>Lore ipsum</p>
+            </div>
+          </div>
+          <div className={classes.WorkCard} href='https://timer-app-eight.vercel.app/'>
+            <div className={classes.WorkImg}>
+              <img src='timerapp.png' />
+            </div>
+            <div className={classes.WorkDescription}>
+              <h3>Timer App</h3>
               <p>Lore ipsum</p>
             </div>
           </div>
