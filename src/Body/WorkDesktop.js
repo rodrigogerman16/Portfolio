@@ -38,7 +38,7 @@ const WorkDesktop = () =>
 
           <a className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/'>
             <div className={classes.WorkImg}>
-              <img src="myweatherapp.png" alt='weatherapp-img'/>
+              <img src='myweatherapp.png' alt='weatherapp-img'/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Weather App</h3>
