@@ -5,6 +5,7 @@ const WorkDesktop = () =>
     return(
         <div className={classes.Body} id="work">
         <div className={classes.Work}>
+
           <a className={classes.WorkCard} href='https://mypiroska.com/index.html'>
             <div className={classes.WorkImg}>
               <img src='mypiroska.png' alt='mypiroska'/>
@@ -14,6 +15,7 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </a>
+
           <a className={classes.WorkCard} href='https://belentejedor.vercel.app/'>
             <div className={classes.WorkImg}>
               <img src='belenpage.png' alt='belenpage'/>
@@ -23,6 +25,7 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </a>
+
           <div className={classes.WorkCard} href='https://geoquiz-mpgsgymel-rodrigogerman16.vercel.app/'>
             <div className={classes.WorkImg}>
               <img src='quizapp.png' alt='geoquizz'/>
@@ -32,24 +35,26 @@ const WorkDesktop = () =>
               <p>Lore ipsum</p>
             </div>
           </div>
-          <div className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/'>
+
+          <a className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/'>
             <div className={classes.WorkImg}>
-              <img src='weatherapp.png' />
+              <img src="myweatherapp.png" alt='weatherapp-img'/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Weather App</h3>
               <p>Lore ipsum</p>
             </div>
-          </div>
-          <div className={classes.WorkCard} href='https://timer-app-eight.vercel.app/'>
+          </a>
+
+          <a className={classes.WorkCard} href='https://timer-app-eight.vercel.app/'>
             <div className={classes.WorkImg}>
-              <img src='timerapp.png' />
+              <img src="timerapp.png" alt="timerapp-img"/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Timer App</h3>
               <p>Lore ipsum</p>
             </div>
-          </div>
+          </a>
        </div>
        </div>
     )
