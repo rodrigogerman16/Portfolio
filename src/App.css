@@ -73,12 +73,9 @@ textarea.Contact-form-text{
 }
 
 .Social-icons {
-  background-color: black;
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  grid-area: social;
-  height: 50px;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 
 .Social-icons a {

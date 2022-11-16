@@ -38,10 +38,7 @@ const Form = () => {
                 <textarea type="text" className='Contact-form-text' placeholder='Message' name='message'onChange={handleInputChange}/>
                 <input type="submit" className='Contact-form-btn' value='Send'/>
             </form>
-            </div>
-            <div className='Sponsors'>
-            LOGO LOGO LOGO
-            </div>        
+            </div>      
         </div>
       </Fragment>
     );
