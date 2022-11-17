@@ -1,9 +1,7 @@
 .NavBar{
-    background:#181818;
     height: 80px;
     width: 100%;
-    position: fixed;
-    z-index: 999;
+    position: absolute;
     opacity: 0.9;
     display: flex;
     justify-content: end;
@@ -25,6 +23,10 @@
 .NavBar nav ul li a{
     text-decoration: none;
     color: white;
+}
+
+.NavBar nav ul li a:hover{
+    color: #e36161;
 }
 
 .NavBar .MobileNavigation{
@@ -64,10 +66,12 @@
 
     .NavBar{
         opacity: 1;
+        position: fixed;
+        z-index: 999;   
     }
 
     .NavBar a:hover{
         border-bottom: none;
-        color:#e36161;
+        color:#a37474;
     }
 }
