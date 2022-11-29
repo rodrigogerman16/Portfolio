@@ -32,7 +32,7 @@ const WorkDesktop = () =>
             </div>
             <div className={classes.WorkDescription}>
               <h3>GeoQuiz</h3>
-              <p>Lore ipsum</p>
+              <p>In progress</p>
             </div>
           </div>
 
