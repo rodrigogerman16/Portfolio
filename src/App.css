@@ -5,10 +5,13 @@
 }
 
 /* Footer */
-
 .Contact-container{
-  background: black;
   padding: 40px 0;
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Contact-container h1{
@@ -20,15 +23,17 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.Message-form{
+  min-width: 350px;
+}
+
 .Contact-form{
   max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
   overflow: hidden;
+  padding: 2em;
 }
 
 .Contact-form-text{
-  display: block;
   width: 100%;
   box-sizing: border-box;
   margin: 16px 0;
@@ -41,7 +46,7 @@
 }
 
 .Contact-form-text:focus{
-  box-shadow: 0 0 5px 1px white;
+  box-shadow: 0px 0px 5px 1px white;
 }
 
 textarea.Contact-form-text{

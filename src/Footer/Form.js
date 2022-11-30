@@ -27,7 +27,7 @@ const Form = () => {
 
     return (
         <Fragment>
-            <div className='Contact-container' id='Contact' onSubmit={sendData}>
+            <div className='Contact-container' id='footer' onSubmit={sendData}>
             <div className='Message-form'>
             <h1>¡Let's work togheter!</h1>
             <div className='Border'></div>  

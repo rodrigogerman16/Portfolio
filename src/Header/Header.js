@@ -4,7 +4,7 @@ import { faLinkedin, faGithub, faInstagram, faTwitter } from "@fortawesome/free-
 
 const Header = () => {
     return(      
-        <div className={classes.HeaderInitial}>
+        <div className={classes.HeaderInitial} id='header'>
           <div className={classes.HeaderTitle}>
             <h2>Hi</h2>
             <h2>I'm Rodrigo</h2>
