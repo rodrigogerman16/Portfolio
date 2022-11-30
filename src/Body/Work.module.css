@@ -6,10 +6,11 @@
 .Work{
 background-color: #151320;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
 grid-gap: 40px;
 padding: 20px;
 text-align: center;
+justify-content: center;
 }
 
 .WorkCard{  
