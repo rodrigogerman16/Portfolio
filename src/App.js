@@ -3,6 +3,7 @@ import Form from './Footer/Form.js';
 import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
 import Work from './Body/Work';
+import Skills from './Skills/Skills';
 
 function App() { 
   return (
@@ -10,7 +11,8 @@ function App() {
       <NavBar/>  
       <Header/> 
       <Work/>
-      <Form />  
+      <Skills/>
+      <Form/>  
     </div>
   );
 }
