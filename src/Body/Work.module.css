@@ -13,6 +13,18 @@ text-align: center;
 justify-content: center;
 }
 
+.WorkTitle{
+  background: #151320;
+  text-align: center;
+  font-family: 'JelleeBold';
+  font-weight: normal;
+  font-style: normal;
+  padding: 2em 0 1em 0;
+  font-size: xx-large;
+  color: #ab2a3e;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white ;
+}
+
 .WorkCard{  
 max-height: 444px;
 background-color: #1c1b29;
