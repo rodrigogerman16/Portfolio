@@ -6,7 +6,9 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'JelleeBold';
+    font-weight: normal;
+     font-style: normal;
 }
 
 .NavBar nav ul{
@@ -25,8 +27,8 @@
     color: white;
 }
 
-.NavBar nav ul li a:hover{
-    color: #e36161;
+.NavBar nav ul li a:hover{    
+    color: #ab2a3e;
 }
 
 .NavBar .MobileNavigation{
