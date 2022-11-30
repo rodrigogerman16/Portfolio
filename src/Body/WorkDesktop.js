@@ -3,7 +3,7 @@ import classes from "./Work.module.css";
 const WorkDesktop = () =>
 {
     return(
-        <div className={classes.Body} id="work">
+        <div className={classes.Body}>
         <div className={classes.Work}>
 
           <a className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank" rel="noreferrer">
