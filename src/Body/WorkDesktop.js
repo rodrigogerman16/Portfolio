@@ -6,23 +6,12 @@ const WorkDesktop = () =>
         <div className={classes.Body} id="work">
         <div className={classes.Work}>
 
-          <a className={classes.WorkCard} href='https://mypiroska.com/index.html' target="_blank">
-            <div className={classes.WorkImg}>
-              <img src='mypiroska.png' alt='mypiroska'/>
-            </div>
-            <div className={classes.WorkDescription}>
-              <h3>My Piroska</h3>
-              <p>Lore ipsum</p>
-            </div>
-          </a>
-
           <a className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank">
             <div className={classes.WorkImg}>
               <img src='belenpage.png' alt='belenpage'/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Belen Tejedor Landing Page</h3>
-              <p>Lore ipsum</p>
             </div>
           </a>
 
@@ -32,7 +21,6 @@ const WorkDesktop = () =>
             </div>
             <div className={classes.WorkDescription}>
               <h3>GeoQuiz</h3>
-              <p>In progress</p>
             </div>
           </div>
 
@@ -42,7 +30,6 @@ const WorkDesktop = () =>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Weather App</h3>
-              <p>Lore ipsum</p>
             </div>
           </a>
 
@@ -52,7 +39,6 @@ const WorkDesktop = () =>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Timer App</h3>
-              <p>Lore ipsum</p>
             </div>
           </a>
        </div>
