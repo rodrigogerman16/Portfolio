@@ -2,18 +2,16 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(#151320,#8693AB );
-    padding: 2em 1em;
+    padding: 5em 1em;
 }
 
 .SkillsTitle{
     margin: auto;
-    font-family: 'JelleeBold';
-    font-weight: normal;
-    font-style: normal;
+    font-family: monospace;
     padding: 2em 0 1em 0;
     font-size: xx-large;
-    color: #ab2a3e;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .SkillsImgContainer{
