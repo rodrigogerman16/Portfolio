@@ -80,13 +80,6 @@ opacity: 0.6;
 }
 
 @media (max-width: 768px){
-  .WorkImg{
-    border-radius: 20px 20px 0px 0px;
-  }
-
-  .WorkImg img{
-    height: 250px;
-  }
   .Body{
     height: 100%;
   }
