@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const NavLinks = (props) => {
 
@@ -12,21 +13,28 @@ const NavLinks = (props) => {
                 animate={animateTo}
                 transition={{delay:0.05}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href="#header">About me</a>
+                <Link to="/"><a href="#header">Home</a></Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay:0.10}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href="#work">Work</a>
+                <Link to="/about"><a>About</a></Link>
+            </motion.li>
+            <motion.li 
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{delay:0.15}}
+                onClick={() => props.isMobile && props.closeMobileMenu()}>
+                <Link to="/"><a href="#work">Work</a></Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay:0.20}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href="#footer">Contact</a>  
+                <Link to="/"><a href="#footer">Contact</a></Link>
             </motion.li>      
         </ul>
         )
