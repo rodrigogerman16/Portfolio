@@ -1,0 +1,37 @@
+.AboutContainer{
+    background: #151320;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.AboutImg img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    padding: 0 2em;   
+}
+
+.AboutDescription{
+    font-family: monospace;
+    font-weight: normal;
+    font-size: normal;
+    font-size: 15px;
+    width: 50%;
+    color: white;
+}
+
+@media (max-width: 990px) {
+    .AboutContainer{
+        flex-direction: column;
+    }
+    .AboutImg{
+        margin-top: 4em;
+    }
+    .AboutDescription{
+        padding: 0 2em;
+        width: 100%;
+    }
+}
