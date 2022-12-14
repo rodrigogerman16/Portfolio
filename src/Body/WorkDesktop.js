@@ -4,6 +4,7 @@ const WorkDesktop = () =>
 {
     return(
         <div className={classes.Body}>
+        <h2 className={classes.WorkTitle}>Some of my latest work...</h2>
         <div className={classes.Work}>
 
           <a className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank" rel="noreferrer">
@@ -20,7 +21,7 @@ const WorkDesktop = () =>
               <img src='quizapp.png' alt='geoquizz'/>
             </div>
             <div className={classes.WorkDescription}>
-              <h3>GeoQuiz</h3>
+              <h3>GeoQuiz (In Process)</h3>
             </div>
           </div>
 
