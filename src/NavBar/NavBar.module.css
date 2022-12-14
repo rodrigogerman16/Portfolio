@@ -3,8 +3,8 @@
     width: 100%;
     position: absolute;
     opacity: 0.9;
-    display: flex;
-    justify-content: end;
+    display: flex; 
+    justify-content: flex-end;
     align-items: center;
     font-family: 'JelleeBold';
     font-weight: normal;
