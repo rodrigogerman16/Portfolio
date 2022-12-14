@@ -4,15 +4,36 @@ import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
 import Work from './Body/Work';
 import Skills from './Skills/Skills';
+import About from './About/About';
+import { Route, Switch } from 'react-router-dom';
 
 function App() { 
   return (
     <div className="App">
-      <NavBar/>  
-      <Header/> 
-      <Work/>
-      <Skills/>
-      <Form/>  
+      <Switch>
+        <Route exact path="/">
+          <NavBar/>  
+          <Header/> 
+          <Work/>
+          <Skills/>
+          <Form/>
+        </Route>
+        <Route exact path="/about">
+          <NavBar/> 
+          <About/>
+        </Route>       
+        <Route exact path="/work">
+          <div className='WorkSection'>
+            <NavBar/> 
+            <Work/>
+          </div>          
+        </Route>  
+        <Route exact path="/contact">
+          <NavBar/> 
+          <Form/>
+        </Route>   
+      </Switch>
+      
     </div>
   );
 }
