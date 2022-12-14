@@ -13,28 +13,28 @@ const NavLinks = (props) => {
                 animate={animateTo}
                 transition={{delay:0.05}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <Link to="/"><a href="#header">Home</a></Link>
+                <Link to="/header"><a href="#header">Home</a></Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay:0.10}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <Link to="/about"><a>About</a></Link>
+                <Link to="/about"><a href='about'>About</a></Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay:0.15}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <Link to="/"><a href="#work">Work</a></Link>
+                <Link to="/work"><a href='#work'>Work</a></Link>
             </motion.li>
             <motion.li 
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay:0.20}}
                 onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <Link to="/"><a href="#footer">Contact</a></Link>
+                <Link to="/contact"><a href="#footer">Contact</a></Link>
             </motion.li>      
         </ul>
         )
