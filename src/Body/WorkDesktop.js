@@ -4,7 +4,7 @@ const WorkDesktop = () =>
 {
     return(
         <div className={classes.Body}>
-        <h2 className={classes.WorkTitle}>Some of my latest work...</h2>
+        <h2 className={classes.WorkTitle}>Some of my latest work</h2>
         <div className={classes.Work}>
 
           <a className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank" rel="noreferrer">
