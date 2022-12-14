@@ -16,15 +16,6 @@ const WorkDesktop = () =>
             </div>
           </a>
 
-          <div className={classes.WorkCard} href='https://geoquiz-mpgsgymel-rodrigogerman16.vercel.app/' target="_blank" rel="noreferrer">
-            <div className={classes.WorkImg}>
-              <img src='quizapp.png' alt='geoquizz'/>
-            </div>
-            <div className={classes.WorkDescription}>
-              <h3>GeoQuiz (In Process)</h3>
-            </div>
-          </div>
-
           <a className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/' target="_blank" rel="noreferrer"> 
             <div className={classes.WorkImg}>
               <img src='myweatherapp.png' alt='weatherapp-img'/>
@@ -41,7 +32,16 @@ const WorkDesktop = () =>
             <div className={classes.WorkDescription}>
               <h3>Timer App</h3>
             </div>
-          </a>
+          </a>          
+
+          <div className={classes.WorkCard} href='https://geoquiz-mpgsgymel-rodrigogerman16.vercel.app/' target="_blank" rel="noreferrer">
+            <div className={classes.WorkImg}>
+              <img src='quizapp.png' alt='geoquizz'/>
+            </div>
+            <div className={classes.WorkDescription}>
+              <h3>GeoQuiz (In Process)</h3>
+            </div>
+          </div>
        </div>
        </div>
     )
