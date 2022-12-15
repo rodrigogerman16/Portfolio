@@ -1,0 +1,31 @@
+.SkillsContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 2em 5em;
+}
+
+.SkillsItemsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 80px));
+    column-gap: 3em;
+    row-gap: 2em;
+    padding: 2em 3em;
+    justify-content: center;
+}
+
+.SkillItem{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 1em;
+}
+
+.SkillsTitle{
+    margin: auto;
+    font-family: monospace;
+    padding: 2em 0 1em 0;
+    font-size: xx-large;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
