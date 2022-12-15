@@ -1,33 +1,40 @@
 import classes from './Skills.module.css'
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+   
 const Skills = () =>{
+    useEffect(() =>{
+        AOS.init({duration: 1000})
+      }, [])
     return(
         <div className={classes.SkillsContainer}>
-            <div className={classes.SkillsTitle}>
+            <div data-aos='fade-right' className={classes.SkillsTitle}>
                 <h2>SKILLS</h2>
             </div>
             <div className={classes.SkillsItemsContainer}>
-                <div className={classes.SkillItem}>
+                <div data-aos="zoom-in-up" className={classes.SkillItem}>
                     <img src='/leader.png' alt='Leaderpng'/>
                     <p>Leader</p>
                 </div>
-                <div className={classes.SkillItem}>
+                <div data-aos="zoom-in-up" className={classes.SkillItem}>
                     <img src='/energetic.png' alt='energeticpng'/>
                     <p>Energetic</p>
                 </div>
-                <div className={classes.SkillItem}>
+                <div data-aos="zoom-in-up" className={classes.SkillItem}>
                     <img src='/optimistic.png' alt='optimisticpng'/>
                     <p>Optimistic</p>
                 </div>
-                <div className={classes.SkillItem}>
+                <div data-aos="zoom-in-up" className={classes.SkillItem}>
                     <img src='/speaker.png' alt='speakerpng'/>
                     <p>Good Speaker</p>
                 </div>
-                <div className={classes.SkillItem}>
+                <div data-aos="zoom-in-up" className={classes.SkillItem}>
                     <img src='/friendly.png' alt='friendlypng'/>
                     <p>Friendly</p>
                 </div>
-                <div className={classes.SkillItem}>
+                <div data-aos="zoom-in-up" className={classes.SkillItem}>
                     <img src='/autodidact.png' alt='autodidactpng'/>
                     <p>Autodidact</p>
                 </div>
