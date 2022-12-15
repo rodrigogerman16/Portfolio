@@ -23,10 +23,8 @@ function App() {
           <About/>
         </Route>       
         <Route exact path="/work">
-          <div className='WorkSection'>
             <NavBar/> 
-            <Work/>
-          </div>          
+            <Work/>      
         </Route>  
         <Route exact path="/contact">
           <NavBar/> 
