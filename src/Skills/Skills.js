@@ -20,8 +20,8 @@ const Skills = () =>{
                     <p>Optimistic</p>
                 </div>
                 <div className={classes.SkillItem}>
-                    <img src='/orator.png' alt='oratorpng'/>
-                    <p>Good Communicator</p>
+                    <img src='/speaker.png' alt='speakerpng'/>
+                    <p>Good Speaker</p>
                 </div>
                 <div className={classes.SkillItem}>
                     <img src='/friendly.png' alt='friendlypng'/>
