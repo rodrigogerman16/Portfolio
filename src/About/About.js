@@ -5,10 +5,18 @@ const About = () =>{
     return(
         <div className={classes.AboutContainer}>
             <div className={classes.AboutImg}>
-                <img src="profile.png"/>
+                <img src="profile.png" alt='profilepng'/>
             </div>
             <div className={classes.AboutDescription}>
-                <p> t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p>
+                    I’m a Front-End Developer located in Madrid managing a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                </p>
+                <p>
+                    Well-organised person, problem solver, independent employee with attention to detail but also a teamplayer with high communication skills and leadership. Fan of strategic games, Electronic music, TV series and Camping in the mountain.
+                </p>
+                <p>
+                    Interested in the entire frontend spectrum and working on ambitious projects with positive people.
+                </p>
             </div>
         </div>
     )
