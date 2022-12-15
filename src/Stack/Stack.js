@@ -1,12 +1,12 @@
-import classes from "./Skills.module.css"
+import classes from "./Stack.module.css"
 
-const Skills = () =>{
+const Stack = () =>{
     return(
-        <div className={classes.SkillsContainer}>
-            <div className={classes.SkillsTitle}>
+        <div className={classes.StackContainer}>
+            <div className={classes.StackTitle}>
                 <h2>STACK</h2>
             </div>
-            <div className={classes.SkillsImgContainer}>
+            <div className={classes.StackImgContainer}>
 
                 <div>
                     <img src='/html.png' alt='htmlpng' />
@@ -59,4 +59,4 @@ const Skills = () =>{
     )
 }
 
-export default Skills;
+export default Stack;

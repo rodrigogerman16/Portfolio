@@ -3,7 +3,7 @@ import Form from './Footer/Form.js';
 import NavBar from './NavBar/NavBar';
 import Header from './Header/Header';
 import Work from './Body/Work';
-import Skills from './Skills/Skills';
+import Stack from './Stack/Stack';
 import About from './About/About';
 import { Route, Switch } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ function App() {
           <NavBar/>  
           <Header/> 
           <Work/>
-          <Skills/>
+          <Stack/>
           <Form/>
         </Route>
         <Route exact path="/about">

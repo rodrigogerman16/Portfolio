@@ -1,10 +1,10 @@
-.SkillsContainer{
+.StackContainer{
     display: flex;
     flex-direction: column;
     padding: 5em 1em;
 }
 
-.SkillsTitle{
+.StackTitle{
     margin: auto;
     font-family: monospace;
     padding: 2em 0 1em 0;
@@ -13,21 +13,22 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.SkillsImgContainer{
+.StackImgContainer{
     display: grid;
     padding: 2em 2em;
-    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
-    gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(80px,auto));
+    column-gap: 3em;
+    row-gap: 2em;
     justify-content: center;
 }
-.SkillsImgContainer div{
+.StackImgContainer div{
     flex-direction: column;
     color: white;
     text-align: center;
     align-self: flex-end;
 }
-.SkillsImgContainer div img{
-    max-width: 120px;
-    max-height: 120px;
+.StackImgContainer div img{
+    max-width: 80px;
+    max-height: 80px;
     margin: auto;
 }
