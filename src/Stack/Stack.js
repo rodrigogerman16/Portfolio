@@ -10,7 +10,7 @@ const Stack = () =>{
 
                 <div>
                     <img src='/html.png' alt='htmlpng' />
-                    <p>HTML</p>
+                    <p>HTML5</p>
                 </div>
 
                 <div>
