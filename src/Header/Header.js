@@ -71,7 +71,7 @@ const Header = () => {
             default: { ease: "linear" }
           }}
           >
-            <a href="https://www.instagram.com/rodrigogerman2/?hl=es"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.instagram.com/rodrigogerman2/?hl=es" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
           </motion.div>
 
           <motion.div
@@ -83,7 +83,7 @@ const Header = () => {
             default: { ease: "linear" }
           }}
           >
-            <a href="https://twitter.com/RodriiGerman"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://twitter.com/RodriiGerman" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
           </motion.div>
 
           <motion.div
@@ -95,7 +95,7 @@ const Header = () => {
             default: { ease: "linear" }
           }}
           >
-            <a href="https://github.com/rodrigogerman16"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://github.com/rodrigogerman16" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
           </motion.div>
           
           <motion.div
@@ -107,7 +107,7 @@ const Header = () => {
             default: { ease: "linear" }
           }}
           >
-            <a href="https://www.linkedin.com/in/rodrigo-german-8408a5127/"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/rodrigo-german-8408a5127/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
           </motion.div>          
           
         </div>
