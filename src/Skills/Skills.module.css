@@ -6,10 +6,10 @@
 
 .SkillsItemsContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 80px));
+    grid-template-columns: repeat(auto-fit, minmax(80px, auto));
     column-gap: 3em;
     row-gap: 2em;
-    padding: 2em 3em;
+    padding: 2em 1em;
     justify-content: center;
 }
 
@@ -19,6 +19,17 @@
     color: white;
     text-align: center;
     gap: 1em;
+}
+
+.SkillItem img{
+    max-width: 95px;
+}
+
+.SkillItem p{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .SkillsTitle{
