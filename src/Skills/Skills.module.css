@@ -1,7 +1,6 @@
 .SkillsContainer{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(#151320,#8693AB );
     padding: 5em 1em;
 }
 
@@ -16,12 +15,19 @@
 
 .SkillsImgContainer{
     display: grid;
-    padding: 2em 0;
-    grid-template-columns: repeat(auto-fit, minmax(130px,auto));
+    padding: 2em 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
     gap: 3em;
     justify-content: center;
 }
-.SkillsImgContainer img{
+.SkillsImgContainer div{
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+}
+.SkillsImgContainer div img{
     max-width: 120px;
+    max-height: 120px;
     margin: auto;
 }
