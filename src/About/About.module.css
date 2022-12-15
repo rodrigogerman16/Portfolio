@@ -1,5 +1,5 @@
 .AboutContainer{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -14,12 +14,13 @@
 }
 
 .AboutDescription{
-    font-family: monospace;
-    font-weight: normal;
-    font-size: normal;
-    font-size: 15px;
+    font-family: "Open Sans",sans-serif;
     width: 50%;
     color: white;
+}
+
+.AboutDescription p{
+    padding: 1em;
 }
 
 @media (max-width: 990px) {
@@ -30,7 +31,8 @@
         margin-top: 4em;
     }
     .AboutDescription{
-        padding: 0 2em;
+        padding: 0 2em 2em;
         width: 100%;
+        margin-top: 2em;
     }
 }
