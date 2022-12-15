@@ -6,7 +6,7 @@ const WorkDesktop = () =>
         <div className={classes.Body}>
         <h2 className={classes.WorkTitle}>Some of my latest work</h2>
         <div className={classes.Work}>
-
+          
           <a className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>
               <img src='belenpage.png' alt='belenpage'/>
@@ -14,7 +14,7 @@ const WorkDesktop = () =>
             <div className={classes.WorkDescription}>
               <h3>Belen Tejedor Landing Page</h3>
             </div>
-          </a>
+          </a>          
 
           <a className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/' target="_blank" rel="noreferrer"> 
             <div className={classes.WorkImg}>
