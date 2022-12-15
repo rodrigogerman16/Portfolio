@@ -21,7 +21,7 @@ const Skills = () =>{
                 </div>
                 <div className={classes.SkillItem}>
                     <img src='/orator.png' alt='oratorpng'/>
-                    <p>Orator</p>
+                    <p>Good Communicator</p>
                 </div>
                 <div className={classes.SkillItem}>
                     <img src='/friendly.png' alt='friendlypng'/>
