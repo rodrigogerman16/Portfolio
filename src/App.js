@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import Work from './Body/Work';
 import Stack from './Stack/Stack';
 import About from './About/About';
+import Skills from './Skills/Skills';
 import { Route, Switch } from 'react-router-dom';
 
 function App() { 
@@ -16,6 +17,7 @@ function App() {
           <Header/> 
           <Work/>
           <Stack/>
+          <Skills/>
           <Form/>
         </Route>
         <Route exact path="/about">
