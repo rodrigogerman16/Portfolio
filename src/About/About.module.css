@@ -20,7 +20,7 @@
 }
 
 .AboutDescription p{
-    padding: 1em;
+    padding: 0 1em 1em;
 }
 
 @media (max-width: 990px) {
@@ -34,5 +34,8 @@
         padding: 0 2em 2em;
         width: 100%;
         margin-top: 2em;
+    }
+    .AboutImg img{
+        max-width: 300px;  
     }
 }
