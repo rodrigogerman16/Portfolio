@@ -4,6 +4,10 @@
   box-sizing: border-box; 
 }
 
+.App{
+  background: linear-gradient(#000,#100000);
+}
+
 /* Footer */
 .Contact-container{
   padding: 40px 0;
