@@ -1,4 +1,5 @@
 import classes from "./About.module.css"
+import { Link } from "react-router-dom"
 
 
 const About = () =>{
@@ -17,6 +18,7 @@ const About = () =>{
                 <p>
                     Interested in the entire frontend spectrum and working on ambitious projects with positive people.
                 </p>
+                <Link to='/contact'>Start new adventure</Link>
             </div>
         </div>
     )
