@@ -29,7 +29,7 @@ const Form = () => {
         <Fragment>
             <div className='Contact-container' id='footer' onSubmit={sendData}>
             <div className='Message-form'>
-            <h1>¡Let's work togheter!</h1>
+            <h1>¡Let's work together!</h1>
             <div className='Border'></div>  
             <form className='Contact-form' action="index.html" method="post">
                 <input type="text" className='Contact-form-text' placeholder='Name' name='name' onChange={handleInputChange}/>
