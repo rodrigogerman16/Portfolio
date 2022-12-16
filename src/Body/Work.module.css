@@ -10,7 +10,7 @@ justify-content: center;
 
 .WorkTitle{
   text-align: center;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 4em 1em 2em 1em;
   font-size: 22px;
   color: white;
