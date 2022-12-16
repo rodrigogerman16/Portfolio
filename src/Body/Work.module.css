@@ -41,6 +41,7 @@ height: 320px;
 
 .WorkDescription{  
 padding: 20px 10px;
+font-family: Arial,Helvetica,sans-serif;
 }
 .WorkDescription>h3{
 color: white;
