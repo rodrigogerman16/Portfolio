@@ -40,12 +40,12 @@ const WorkDesktop = () =>
             </div>
           </a>          
 
-          <div data-aos='zoom-in' className={classes.WorkCard} href='https://geoquiz-mpgsgymel-rodrigogerman16.vercel.app/' target="_blank" rel="noreferrer">
+          <div data-aos='zoom-in' className={classes.WorkCard} target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>
-              <img src='quizapp.png' alt='geoquizz'/>
+              <img src='dogapp.png' alt='dogapp'/>
             </div>
             <div className={classes.WorkDescription}>
-              <h3>GeoQuiz (In Process)</h3>
+              <h3>Dog finder (In Process)</h3>
             </div>
           </div>
        </div>
