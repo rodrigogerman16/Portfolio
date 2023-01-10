@@ -12,6 +12,14 @@ const WorkDesktop = () =>
         <div className={classes.Body}>
         <h2 data-aos='fade-right' className={classes.WorkTitle}>Some of my latest work</h2>
         <div className={classes.Work}>
+          <a data-aos='zoom-in' className={classes.WorkCard} href='https://dogs-app-sandy.vercel.app/' target="_blank" rel="noreferrer">
+            <div className={classes.WorkImg}>
+              <img src='dogapp.png' alt='dogapp'/>
+            </div>
+            <div className={classes.WorkDescription}>
+              <h3>Dog finder (In Process)</h3>
+            </div>
+          </a>
           
           <a data-aos='zoom-in' className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>
@@ -37,15 +45,6 @@ const WorkDesktop = () =>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Timer App</h3>
-            </div>
-          </a>          
-
-          <a data-aos='zoom-in' className={classes.WorkCard} href='https://dogs-ldfesfkcv-rodrigogerman16.vercel.app/' target="_blank" rel="noreferrer">
-            <div className={classes.WorkImg}>
-              <img src='dogapp.png' alt='dogapp'/>
-            </div>
-            <div className={classes.WorkDescription}>
-              <h3>Dog finder (In Process)</h3>
             </div>
           </a>
        </div>
