@@ -17,7 +17,7 @@ const WorkDesktop = () =>
               <img src='dogapp.png' alt='dogapp'/>
             </div>
             <div className={classes.WorkDescription}>
-              <h3>Dog finder (In Process)</h3>
+              <h3>Woffinder</h3>
             </div>
           </a>
           
