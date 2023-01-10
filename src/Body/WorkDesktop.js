@@ -40,14 +40,14 @@ const WorkDesktop = () =>
             </div>
           </a>          
 
-          <div data-aos='zoom-in' className={classes.WorkCard} target="_blank" rel="noreferrer">
+          <a data-aos='zoom-in' className={classes.WorkCard} href='https://dogs-ldfesfkcv-rodrigogerman16.vercel.app/' target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>
               <img src='dogapp.png' alt='dogapp'/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Dog finder (In Process)</h3>
             </div>
-          </div>
+          </a>
        </div>
        </div>
     )
