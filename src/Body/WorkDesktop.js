@@ -12,6 +12,15 @@ const WorkDesktop = () =>
         <div className={classes.Body}>
         <h2 data-aos='fade-right' className={classes.WorkTitle}>Some of my latest work</h2>
         <div className={classes.Work}>
+        <a data-aos='zoom-in' className={classes.WorkCard} href='https://mercadosolidario.vercel.app/' target="_blank" rel="noreferrer">
+            <div className={classes.WorkImg}>
+              <img src='mercado.png' alt='Mercado Solidario Logo'/>
+            </div>
+            <div className={classes.WorkDescription}>
+              <h3>Mercado Solidario</h3>
+            </div>
+          </a>
+
           <a data-aos='zoom-in' className={classes.WorkCard} href='https://dogs-app-sandy.vercel.app/' target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>
               <img src='dogapp.png' alt='dogapp'/>
