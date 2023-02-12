@@ -14,7 +14,7 @@ const WorkDesktop = () =>
         <div className={classes.Work}>
         <a data-aos='zoom-in' className={classes.WorkCard} href='https://mercadosolidario.vercel.app/' target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>
-              <img src='mercado.png' alt='Mercado Solidario Logo'/>
+              <img src='mercado.png' className={classes.MercadoSolidario} alt='Mercado Solidario Logo'/>
             </div>
             <div className={classes.WorkDescription}>
               <h3>Mercado Solidario</h3>

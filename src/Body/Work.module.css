@@ -32,15 +32,17 @@ transform: scale(1.02);
 position: relative;
 }
 
-.WorkImg img:first{
-  object-fit: contain;
-}
 .WorkImg img{
 width: 100%;
 display: block;
 border-radius: 20px 20px 0 0;
 height: 320px;
 object-fit: cover;
+}
+
+
+.WorkCard .WorkImg .MercadoSolidario{
+  object-fit: contain;
 }
 
 .WorkDescription{  
