@@ -3,7 +3,7 @@ import classes from "./NavBar.module.css"
 
 const Navigation = () => {
     return ( 
-        <nav className={classes.Navigation}>
+        <nav>
             <NavLinks/>
         </nav>
      );
