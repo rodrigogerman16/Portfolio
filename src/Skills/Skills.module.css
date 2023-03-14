@@ -31,12 +31,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.SkillsTitle{
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 2em 0 1em 0;
-    font-size: xx-large;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}

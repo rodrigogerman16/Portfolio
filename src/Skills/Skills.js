@@ -10,8 +10,8 @@ const Skills = () =>{
       }, [])
     return(
         <div className={classes.SkillsContainer}>
-            <div data-aos='fade-right' className={classes.SkillsTitle}>
-                <h2>SKILLS</h2>
+            <div data-aos='fade-right'>
+            <h2 className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl">SKILLS</h2>
             </div>
             <div className={classes.SkillsItemsContainer}>
                 <div data-aos="zoom-in-up" className={classes.SkillItem}>
