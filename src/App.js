@@ -6,6 +6,7 @@ import Work from './Body/Work';
 import Stack from './Stack/Stack';
 import About from './About/About';
 import Skills from './Skills/Skills';
+import Interviews from './Interviews/Interviews';
 import { Route, Switch } from 'react-router-dom';
 
 function App() { 
@@ -15,7 +16,8 @@ function App() {
         <Route exact path="/">
           <NavBar/>  
           <Header/> 
-          <Work/>
+          <Work/> 
+          <Interviews/>
           <Stack/>
           <Skills/>
           <Form/>
