@@ -12,7 +12,7 @@ const Interview = () => {
         className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl"
         data-aos="zoom-in"
       >
-        Latest Interviews
+        Interviews
       </h2>
       <div className="flex justify-center w-full">
         <iframe

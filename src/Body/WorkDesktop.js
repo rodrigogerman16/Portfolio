@@ -10,7 +10,7 @@ const WorkDesktop = () =>
   }, [])
     return(
         <div className={classes.Body}>
-        <h2 data-aos='fade-right' className={classes.WorkTitle}>Some of my latest work</h2>
+        <h2 data-aos='fade-right' className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl">Some of my latest work</h2>
         <div className={classes.Work}>
         <a data-aos='zoom-in' className={classes.WorkCard} href='https://mercadosolidario.vercel.app/' target="_blank" rel="noreferrer">
             <div className={classes.WorkImg}>

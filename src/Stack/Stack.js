@@ -9,8 +9,8 @@ const Stack = () =>{
       }, [])
     return(
         <div className={classes.StackContainer}>
-            <div data-aos='fade-left' className={classes.StackTitle}>
-                <h2>STACK</h2>
+            <div data-aos='fade-left'>
+                <h2 className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl">STACK</h2>
             </div>
             <div className={classes.StackImgContainer}>
 
