@@ -19,11 +19,11 @@
 
 
 .HeaderTitle h2{
-  color: #ab2a3e;
+  color: #60A5FA;
 }
 
 .HeaderTitle a:hover{
-  color: #ab2a3e;
+  color: #60A5FA;
 }
 
 @media (max-width: 768px){
