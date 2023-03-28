@@ -14,10 +14,10 @@ const Interview = () => {
       >
         Interviews
       </h2>
-      <div className="flex justify-center w-full">
+      <div className="flex flex-col justify-center gap-16 w-full items-center xl:flex-row ">
+        <div>        
         <iframe
           data-aos="zoom-in"
-          width="560"
           height="315"
           src="https://www.youtube.com/embed/MwuSLfqTbuo"
           title="YouTube video player"
@@ -26,10 +26,9 @@ const Interview = () => {
           allowfullscreen
         />
       </div>
-      <div className="flex justify-center w-full">
+      <div>
         <iframe
           data-aos="zoom-in"
-          width="560"
           height="315"
           src="https://www.youtube.com/embed/cpmQtzpaOwQ"
           title="YouTube video player"
@@ -37,6 +36,7 @@ const Interview = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+      </div>
       </div>
     </div>
   );
