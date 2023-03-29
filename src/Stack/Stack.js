@@ -5,12 +5,11 @@ import 'aos/dist/aos.css';
 
 const Stack = () =>{
     useEffect(() =>{
-        AOS.init({duration: 3000})
+        AOS.init({duration: 1000})
       }, [])
     return(
         <div className={classes.StackContainer}>
             <div className={classes.StackImgContainer}>
-
                 <div data-aos="zoom-in-up" className="bg-white rounded-full">
                     <img src='/html.png' alt='htmlpng'/>
                 </div>
@@ -35,6 +34,10 @@ const Stack = () =>{
                     <img src='/redux.png' alt='reduxpng'/>
                 </div>
                 
+                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                    <img src='/tailwind.png' alt='tailwindpng'/>
+                </div>
+
                 <div data-aos="zoom-in-up" className="bg-white rounded-full">
                     <img src='/nodejs.png' alt='nodejspng'/>
                 </div>
