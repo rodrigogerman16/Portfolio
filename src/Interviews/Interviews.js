@@ -7,9 +7,9 @@ const Interview = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div>
+    <div className="py-10 mt-10">
       <h2
-        className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl"
+        className="mb-14 text-black font-sans font-bold text-center text-3xl"
         data-aos="zoom-in"
       >
         Interviews
