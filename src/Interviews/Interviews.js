@@ -18,23 +18,23 @@ const Interview = () => {
         <div>        
         <iframe
           data-aos="zoom-in"
-          height="315"
           src="https://www.youtube.com/embed/MwuSLfqTbuo"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          className="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl"
         />
       </div>
       <div>
         <iframe
           data-aos="zoom-in"
-          height="315"
           src="https://www.youtube.com/embed/cpmQtzpaOwQ"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          className="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl"
         ></iframe>
       </div>
       </div>
