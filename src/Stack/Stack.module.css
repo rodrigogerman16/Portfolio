@@ -1,12 +1,12 @@
 .StackContainer{
     display: flex;
     flex-direction: column;
-    padding: 5em 1em;
+    margin-top: 2em;
+    padding: 0 2em;
 }
 .StackImgContainer{
     display: grid;
-    padding: 2em 2em;
-    grid-template-columns: repeat(auto-fit, minmax(80px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(50px,auto));
     column-gap: 3em;
     row-gap: 2em;
     justify-content: center;
@@ -16,9 +16,12 @@
     color: white;
     text-align: center;
     align-self: flex-end;
+    display: flex;
+    width: 4.375em;
+    height: 4.375em;
 }
 .StackImgContainer div img{
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 50px;
+    max-height: 50px;
     margin: auto;
 }
