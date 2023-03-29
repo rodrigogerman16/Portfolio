@@ -1,64 +1,241 @@
 import classes from "./Work.module.css";
 import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const WorkDesktop = () =>
-{
-  useEffect(() =>{
-    AOS.init({duration: 1000})
-  }, [])
-    return(
-        <div className={classes.Body}>
-        <h2 data-aos='fade-right' className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl">Some of my latest work</h2>
-        <div className={classes.Work}>
-        <a data-aos='zoom-in' className={classes.WorkCard} href='https://mercadosolidario.vercel.app/' target="_blank" rel="noreferrer">
-            <div className={classes.WorkImg}>
-              <img src='mercado.png' className={classes.MercadoSolidario} alt='Mercado Solidario Logo'/>
+const WorkDesktop = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  return (
+    <div className={classes.Body}>
+      <h2
+        data-aos="fade-right"
+        className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl"
+      >
+        Some of my latest work
+      </h2>
+      <div className={classes.Work}>
+        {/*Woffinder*/}
+        <div data-aos="zoom-in" className={classes.WorkCard}>
+          <div className={classes.WorkImg}>
+            <img
+              src="mercado.png"
+              className={classes.MercadoSolidario}
+              alt="Mercado Solidario Logo"
+            />
+          </div>
+          <div className="p-5">
+            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
+              Mercado Solidario
+            </h5>
+            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3">
+              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">NextJs</span>
+              <span className="bg-cyan-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind</span>
+              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">MongoDb</span>
+              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">APIs Integrations</span>
+              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
             </div>
-            <div className={classes.WorkDescription}>
-              <h3>Mercado Solidario</h3>
-            </div>
-          </a>
+            <p className="font-normal text-gray-400 mb-3 md:h-20">
+              Platform for donating, volunteering, creating initiatives and finding workers.
+            </p>
+            <a
+              href="https://mercadosolidario.vercel.app/"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See more
+              <svg
+                className="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-          <a data-aos='zoom-in' className={classes.WorkCard} href='https://dogs-app-sandy.vercel.app/' target="_blank" rel="noreferrer">
-            <div className={classes.WorkImg}>
-              <img src='dogapp.png' alt='dogapp'/>
+        {/*Woffinder*/}
+        <div data-aos="zoom-in" className={classes.WorkCard}>
+          <div className={classes.WorkImg}>
+            <img src="dogapp.png" alt="dogapp" />
+          </div>
+          <div className="p-5">
+            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
+              Woffinder
+            </h5>
+            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3">
+              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+              <span className="bg-violet-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Redux</span>
+              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+              <span className="bg-cyan-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind</span>
+              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
+              <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
+              <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">PostgreSql</span>
+              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">APIs Integrations</span>
             </div>
-            <div className={classes.WorkDescription}>
-              <h3>Woffinder</h3>
-            </div>
-          </a>
-          
-          <a data-aos='zoom-in' className={classes.WorkCard} href='https://belentejedor.vercel.app/' target="_blank" rel="noreferrer">
-            <div className={classes.WorkImg}>
-              <img src='belenpage.png' alt='belenpage'/>
-            </div>
-            <div className={classes.WorkDescription}>
-              <h3>Belen Tejedor Landing Page</h3>
-            </div>
-          </a>          
+            <p className="font-normal text-gray-400 mb-3 md:h-20">
+            Web page to create and search dog breeds. 
+            </p>
+            <a
+              href="https://dogs-app-sandy.vercel.app/"
+              className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See more
+              <svg
+                className="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-          <a data-aos='zoom-in' className={classes.WorkCard} href='https://weather-app-mocha-alpha.vercel.app/' target="_blank" rel="noreferrer"> 
-            <div className={classes.WorkImg}>
-              <img src='myweatherapp.png' alt='weatherapp-img'/>
+        {/*Belen Tejedor*/}
+        <div data-aos="zoom-in" className={classes.WorkCard}>
+          <div className={classes.WorkImg}>
+            <img src="belenpage.png" alt="belenpage" />
+          </div>
+          <div className="p-5">
+            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
+              Belen Tejedor
+            </h5>
+            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
+              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+              <span className="bg-cyan-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind</span>
+              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
             </div>
-            <div className={classes.WorkDescription}>
-              <h3>Weather App</h3>
-            </div>
-          </a>
+            <p className="font-normal text-gray-400 mb-3 md:h-20">
+            Personal website for two times bachata world champion.
+            </p>
+            <a
+              href="https://belentejedor.vercel.app/"
+              className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See more
+              <svg
+                className="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-          <a data-aos='zoom-in' className={classes.WorkCard} href='https://timer-app-eight.vercel.app/' target="_blank" rel="noreferrer">
-            <div className={classes.WorkImg}>
-              <img src="timerapp.png" alt="timerapp-img"/>
+        {/*Weather App*/}
+        <div data-aos="zoom-in" className={classes.WorkCard}>
+          <div className={classes.WorkImg}>
+            <img src="myweatherapp.png" alt="weatherapp-img" />
+          </div>
+          <div className="p-5">
+            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
+              Weather App
+            </h5>
+            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
+              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+              <span className="bg-violet-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Redux</span>
+              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+              <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
+              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
+              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">APIs Integrations</span>
             </div>
-            <div className={classes.WorkDescription}>
-              <h3>Timer App</h3>
-            </div>
-          </a>
-       </div>
-       </div>
-    )
-}
+            <p className="font-normal text-gray-400 mb-3 md:h-20">
+              Search cities and find out their current temperatures.
+            </p>
+            <a
+              href="https://weather-app-mocha-alpha.vercel.app/"
+              className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See more
+              <svg
+                className="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-export default WorkDesktop
+        {/*Timer App*/}
+        <div data-aos="zoom-in" className={classes.WorkCard}>
+          <div className={classes.WorkImg}>
+            <img src="timerapp.png" alt="timerapp-img" />
+          </div>
+          <div className="p-5">
+            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
+              Timer App
+            </h5>
+            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
+              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
+              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+              <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
+              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
+            </div>
+            <p className="font-normal text-gray-400 mb-3 md:h-20 xl:h-max">
+            Application to perform countdown and count forward.
+            </p>
+            <a
+              href="https://timer-app-eight.vercel.app/"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See more
+              <svg
+                className="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default WorkDesktop;
