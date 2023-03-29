@@ -9,7 +9,7 @@ const Interview = () => {
   return (
     <div className="py-10 mt-10">
       <h2
-        className="mb-14 text-black font-sans font-bold text-center text-3xl"
+        className="mb-14 text-white font-sans font-bold text-center text-3xl"
         data-aos="zoom-in"
       >
         Interviews
