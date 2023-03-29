@@ -8,7 +8,7 @@ const Stack = () =>{
         AOS.init({duration: 1000})
       }, [])
     return(
-        <div className={classes.StackContainer}>
+        <div className="lg:px-40 p-10">
             <div className={classes.StackImgContainer}>
                 <div data-aos="zoom-in-up" className="bg-white rounded-full">
                     <img src='/html.png' alt='htmlpng'/>
