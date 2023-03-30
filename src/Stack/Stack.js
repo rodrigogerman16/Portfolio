@@ -7,7 +7,7 @@ const Stack = () =>{
     const animateTo = {opacity: 1, x: 0}
 
     return(
-        <div className="lg:px-40 lg:pt-40 p-10">
+        <div className="lg:px-40 lg:pt-24 px-10 pt-10">
             <motion.div
                 initial={animateFrom}
                 animate={animateTo}

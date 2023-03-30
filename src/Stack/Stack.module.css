@@ -6,7 +6,7 @@
 }
 .StackImgContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(25px,auto));
     column-gap: 3em;
     row-gap: 2em;
     justify-content: center;
@@ -17,11 +17,11 @@
     text-align: center;
     align-self: flex-end;
     display: flex;
-    width: 4.375em;
-    height: 4.375em;
+    width: 2.375em;
+    height: 2.375em;
 }
 .StackImgContainer div img{
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 30px;
+    max-height: 30px;
     margin: auto;
 }
