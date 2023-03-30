@@ -14,7 +14,7 @@ const Interview = () => {
       >
         Interviews
       </h2>
-      <div className="flex flex-col justify-center gap-16 w-full items-center xl:flex-row ">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div>        
         <iframe
           data-aos="zoom-in"
