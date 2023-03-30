@@ -6,7 +6,7 @@
 
 .SkillsItemsContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     column-gap: 3em;
     row-gap: 2em;
     padding: 2em 1em;
@@ -18,7 +18,11 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    gap: 1em;
+    gap: 1em;    
+    align-items: center;
+    border: solid 1px white;
+    padding: 1em;
+    border-radius: 8px;
 }
 
 .SkillItem img{
@@ -26,7 +30,6 @@
 }
 
 .SkillItem p{
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
