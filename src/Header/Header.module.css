@@ -13,13 +13,17 @@
   font-size: xx-large;
   visibility: visible;
   position: relative;
+}
+
+.HeaderTitle h2{
+  color: #60a5fa;
+}
+
+.HeaderTitle h2, p {
+    
   font-family: "JelleeBold";
   font-weight: normal;
   font-style: normal;
-}
-
-.HeaderTitle h2 {
-  color: #60a5fa;
 }
 
 .HeaderTitle a:hover {
