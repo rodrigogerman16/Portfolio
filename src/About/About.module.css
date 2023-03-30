@@ -1,5 +1,4 @@
 .AboutContainer{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -14,7 +13,6 @@
 }
 
 .AboutDescription{
-    font-family: "Open Sans",sans-serif;
     width: 430px;
     color: white;
 }
@@ -22,14 +20,7 @@
 .AboutDescription p{
     padding: 0 1em 1em;
 }
-.AboutDescription a{
-    color: black;
-    font-weight: bold;
-    padding: 0 1em 1em;
-}
-.AboutDescription :hover{
-    color: white;
-}
+
 @media (max-width: 990px) {
     .AboutContainer{
         flex-direction: column;
@@ -39,8 +30,9 @@
     }
     .AboutDescription{
         padding: 0 2em 2em;
-        width: 380px;
         margin-top: 1em;
+        width: 100%;
+        text-align: justify;
     }
 }
 
