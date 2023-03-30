@@ -10,7 +10,7 @@ const WorkDesktop = () => {
   return (
     <div className={classes.Body}>
       <h2
-        data-aos="fade-right"
+        data-aos="zoom-in"
         className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl"
       >
         Some of my latest work
@@ -208,7 +208,7 @@ const WorkDesktop = () => {
               <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
               <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
             </div>
-            <p className="font-normal text-gray-400 mb-3 md:h-20 xl:h-max">
+            <p className="font-normal text-gray-400 mb-3 md:h-20">
             Application to perform countdown and count forward.
             </p>
             <a
