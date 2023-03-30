@@ -7,8 +7,8 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import myCV from '../Assets/Rodrigo German CV English.pdf';
+import { Link } from "react-scroll";
 
 const Header = () => {
   const animateFrom = { opacity: 0, x: -20 };
@@ -138,15 +138,15 @@ const Header = () => {
             </a>
           </motion.div>
         </div>
-        <motion.div className="flex flex-wrap justify-left gap-4 mt-4">
-          <motion.div>
-            <Link
-              to="/about"
-              className="bg-blue-500 hover:bg-white text-sm text-white font-bold py-2 px-4 rounded"
-            >
-              About me
-            </Link>
-          </motion.div>
+        <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 3,
+          x: { duration: 1 },
+          default: { ease: "linear" },
+        }}
+        className="flex flex-wrap justify-left gap-4 mt-4">
           <motion.div>
             <a
               href={myCV} target="_blank" rel="noopener noreferrer"
@@ -156,12 +156,12 @@ const Header = () => {
             </a>
           </motion.div>
           <motion.div>
-            <a
-              href="#work"
+            <Link
+              to="work" smooth={true} duration={500} offset={-100}
               className="bg-blue-500 hover:bg-white text-sm text-white font-bold py-2 px-4 rounded"
             >
               Work
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
