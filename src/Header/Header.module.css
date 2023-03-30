@@ -19,7 +19,7 @@
   color: #60a5fa;
 }
 
-.HeaderTitle h2, p {
+.HeaderTitle h2, .HeaderTitle p {
     
   font-family: "JelleeBold";
   font-weight: normal;
