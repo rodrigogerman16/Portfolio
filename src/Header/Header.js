@@ -9,6 +9,7 @@ import {
 import { motion } from "framer-motion";
 import myCV from '../Assets/Rodrigo German CV English.pdf';
 import { Link } from "react-scroll";
+import { Link as Redirect} from "react-router-dom";
 
 const Header = () => {
   const animateFrom = { opacity: 0, x: -20 };
@@ -154,6 +155,14 @@ const Header = () => {
             >
               Download CV
             </a>
+          </motion.div>
+          <motion.div>
+            <Redirect
+              to="/about"
+              className="bg-blue-500 hover:bg-white text-sm text-white font-bold py-2 px-4 rounded"
+            >
+              About Me
+            </Redirect>
           </motion.div>
           <motion.div>
             <Link
