@@ -1,58 +1,63 @@
 import classes from "./Stack.module.css"
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import {motion} from 'framer-motion';
 
 const Stack = () =>{
-    useEffect(() =>{
-        AOS.init({duration: 1000})
-      }, [])
-    return(
-        <div className="lg:px-40 p-10">
-            <div className={classes.StackImgContainer}>
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
-                    <img src='/html.png' alt='htmlpng'/>
-                </div>
 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+    const animateFrom = {opacity: 0, x: -20}
+    const animateTo = {opacity: 1, x: 0}
+
+    return(
+        <div className="lg:px-40 lg:pt-40 p-10">
+            <motion.div
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{
+                    delay: 3,
+                    x: { duration: 1 },
+                }}
+                className={classes.StackImgContainer}
+                >    
+                <div  className="bg-white rounded-full">
+                    <img src='/html.png' alt='htmlpng'/>
+                </div>   
+
+                <div  className="bg-white rounded-full">
                     <img src='/css.png' alt='csspng'/>
                 </div>
 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/javascript.png' alt='javascriptpng'/>
                 </div>
 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/git.png' alt='gitpng'/>
                 </div>
 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/react.png' alt='reactpng'/>
                 </div>
                 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/redux.png' alt='reduxpng'/>
                 </div>
                 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/tailwind.png' alt='tailwindpng'/>
                 </div>
 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/nodejs.png' alt='nodejspng'/>
                 </div>
                 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/postgresql.png' alt='postgresqlpng'/>
                 </div>
 
-                <div data-aos="zoom-in-up" className="bg-white rounded-full">
+                <div  className="bg-white rounded-full">
                     <img src='/sequelize.png' alt='sequelizepng'/>
-                </div>
-                               
-            </div>
-        </div>
-   
+                </div>    
+                </motion.div>  
+            </div>   
     )
 }
 
