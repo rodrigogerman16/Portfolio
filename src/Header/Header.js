@@ -7,6 +7,8 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import myCV from '../Assets/Rodrigo German CV English.pdf';
 
 const Header = () => {
   const animateFrom = { opacity: 0, x: -20 };
@@ -60,7 +62,7 @@ const Header = () => {
             default: { ease: "linear" },
           }}
         >
-          <h6>I like to create amazing experiences</h6>
+          <p>I like to create amazing experiences</p>
         </motion.div>
 
         <div className="Social-icons">
@@ -136,6 +138,32 @@ const Header = () => {
             </a>
           </motion.div>
         </div>
+        <motion.div className="flex flex-wrap justify-left gap-4 mt-4">
+          <motion.div>
+            <Link
+              to="/about"
+              className="bg-blue-500 hover:bg-white text-sm text-white font-bold py-2 px-4 rounded"
+            >
+              About me
+            </Link>
+          </motion.div>
+          <motion.div>
+            <a
+              href={myCV} target="_blank" rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-white text-sm text-white font-bold py-2 px-4 rounded"
+            >
+              Download CV
+            </a>
+          </motion.div>
+          <motion.div>
+            <a
+              href="#work"
+              className="bg-blue-500 hover:bg-white text-sm text-white font-bold py-2 px-4 rounded"
+            >
+              Work
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
