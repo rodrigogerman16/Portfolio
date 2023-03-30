@@ -31,7 +31,7 @@ const Navigation = (props) => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col pt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold">
+          <ul className="flex flex-col items-end pt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold">
             <motion.li
               initial={animateFrom}
               animate={animateTo}
