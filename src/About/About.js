@@ -33,7 +33,7 @@ const About = () => {
             }}
           >
             <p>
-              I’m a Front-End Developer located in Madrid managing a serious
+              I’m Rodrigo German, a Front-End Developer located in Madrid managing a serious
               passion for UI effects, animations and creating intuitive, dynamic
               user experiences.
             </p>
