@@ -52,7 +52,7 @@ const Navigation = (props) => {
               className="block py-2 pl-3 pr-4 text-white font-bold rounded md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:bg-transparent"
             >
               <Link to="/about" className="hover:text-blue-400">
-                <a href="about">About</a>
+                <a href="about">About Me</a>
               </Link>
             </motion.li>
             <motion.li
