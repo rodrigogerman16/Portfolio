@@ -7,7 +7,6 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import Stack from "../Stack/Stack";
 
 const Header = () => {
   const animateFrom = { opacity: 0, x: -20 };
@@ -138,7 +137,6 @@ const Header = () => {
           </motion.div>
         </div>
       </div>
-        <Stack/>
     </div>
   );
 };
