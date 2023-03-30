@@ -9,12 +9,6 @@ const WorkDesktop = () => {
   }, []);
   return (
     <div className={classes.Body}>
-      <h2
-        data-aos="zoom-in"
-        className="mt-20 mb-14 text-white font-sans font-bold text-center text-2xl"
-      >
-        Some of my latest work
-      </h2>
       <div className={classes.Work}>
         {/*Woffinder*/}
         <div data-aos="zoom-in" className={classes.WorkCard}>
