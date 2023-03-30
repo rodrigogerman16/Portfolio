@@ -8,7 +8,7 @@ const WorkDesktop = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className={classes.Body}>
+    <div className={classes.Body} id="work">
       <div className={classes.Work}>
         {/*Woffinder*/}
         <div data-aos="zoom-in" className={classes.WorkCard}>
