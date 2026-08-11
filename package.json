@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -18,15 +17,14 @@
     "framer-motion": "^6.3.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.4.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.9",
     "web-vitals": "^2.1.4"
   },
   "engines": {
-  "node": "22.x"
-},
+    "node": "22.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

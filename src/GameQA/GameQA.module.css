@@ -1,65 +1,72 @@
-.Work{
+.Grid{
 display: flex;
 flex-wrap: wrap;
 gap: 32px;
-padding: 20px 5em 40px;
 justify-content: center;
-margin: auto;
 }
 
-.WorkCard{
-flex: 1 1 280px;
-max-width: 340px;
+.GameCard{
+flex: 1 1 320px;
+max-width: 420px;
 display: flex;
 flex-direction: column;
 background-color: rgba(19, 26, 39, 0.6);
 border: 1px solid rgba(148, 163, 184, 0.12);
 border-radius: 20px;
 box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -12px rgba(0,0,0,0.55);
-text-decoration: none;
 overflow: hidden;
 transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease;
 }
 
-.WorkCard:hover{
+.GameCard:hover{
 transform: translateY(-8px);
 border-color: rgba(96, 165, 250, 0.35);
 box-shadow: 0 32px 56px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(96, 165, 250, 0.12);
 }
 
-.WorkImg{
+.GameMedia{
 position: relative;
 overflow: hidden;
 }
 
-.WorkImg img{
+.GameMedia img{
 width: 100%;
+height: 180px;
 display: block;
-height: 240px;
 object-fit: cover;
 transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.WorkCard:hover .WorkImg img{
+.GameCard:hover .GameMedia img{
 transform: scale(1.06);
 }
 
-.WorkCard .WorkImg .MercadoSolidario{
-  object-fit: contain;
-  background: #0d1119;
-  padding: 1.5rem;
-}
-
-.WorkImg::after{
+.GameMedia::after{
 content: "";
 position: absolute;
 inset: 0;
-background: linear-gradient(180deg, transparent 60%, rgba(8, 11, 19, 0.85) 100%);
+background: linear-gradient(180deg, transparent 55%, rgba(8, 11, 19, 0.85) 100%);
 pointer-events: none;
 }
 
-@media (max-width: 800px){
-  .Work{
-    padding: 20px 20px 40px;
-  }
+.MediaPlaceholder{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+height: 180px;
+margin: 1rem;
+border: 1px dashed rgba(148, 163, 184, 0.28);
+border-radius: 14px;
+color: #7c87a0;
+background: rgba(4, 6, 11, 0.4);
+}
+
+.BugCard{
+position: relative;
+border: 1px solid rgba(148, 163, 184, 0.12);
+border-radius: 20px;
+background-color: rgba(19, 26, 39, 0.6);
+box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -12px rgba(0,0,0,0.55);
 }

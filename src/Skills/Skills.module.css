@@ -1,36 +1,65 @@
 .SkillsContainer{
     display: flex;
     flex-direction: column;
-    padding: 0em 2em 5em;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 5rem 2rem 3rem;
 }
 
 .SkillsItemsContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-    column-gap: 3em;
-    row-gap: 2em;
-    padding: 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0 1rem;
 }
 
 .SkillItem{
+    flex: 1 1 280px;
+    max-width: 340px;
     display: flex;
     flex-direction: column;
-    color: white;
-    text-align: center;
-    gap: 1em;    
-    align-items: center;
-    border: solid 1px white;
-    padding: 1em;
-    border-radius: 8px;
+    align-items: flex-start;
+    gap: 0.75rem;
+    text-align: left;
+    background: rgba(19, 26, 39, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -12px rgba(0,0,0,0.55);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease;
 }
 
-.SkillItem img{
-    max-width: 95px;
+.SkillItem:hover{
+    transform: translateY(-8px);
+    border-color: rgba(96, 165, 250, 0.35);
+    box-shadow: 0 32px 56px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(96, 165, 250, 0.12);
 }
 
-.SkillItem p{
+.SkillIcon{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 14px;
+    background: rgba(96, 165, 250, 0.12);
+}
+
+.SkillIcon img{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.SkillTitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #f8fafc;
+}
+
+.SkillDescription{
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #a3adc2;
 }

@@ -1,38 +1,76 @@
 .HeaderInitial {
+  position: relative;
   display: flex;
   flex-direction: column;
-  color: white;
-  position: initial;
   justify-content: center;
-  min-height: 80vh;
+  overflow: hidden;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
 }
 
-.HeaderTitle {
-  align-self: start;
-  margin: 0 5em;
-  font-size: xx-large;
-  visibility: visible;
-  position: relative;
+@media (min-width: 640px) {
+  .HeaderInitial {
+    min-height: 92vh;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
 }
 
-.HeaderTitle h2{
-  color: #60a5fa;
+.HeroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.HeaderTitle h2, .HeaderTitle p {
-    
-  font-family: "JelleeBold";
-  font-weight: normal;
-  font-style: normal;
+.Orb1 {
+  position: absolute;
+  top: -12%;
+  right: -8%;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.28), transparent 70%);
+  filter: blur(20px);
+  animation: float1 14s ease-in-out infinite;
 }
 
-.HeaderTitle a:hover {
-  color: #60a5fa;
+.Orb2 {
+  position: absolute;
+  bottom: -18%;
+  left: -10%;
+  width: 26rem;
+  height: 26rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.18), transparent 70%);
+  filter: blur(20px);
+  animation: float2 16s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
+.Grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 65% 55% at 50% 25%, black 40%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 65% 55% at 50% 25%, black 40%, transparent 85%);
+}
 
-  .HeaderTitle {
-    margin: 0 1em;
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-24px, 28px) scale(1.06); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(22px, -22px) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Orb1,
+  .Orb2 {
+    animation: none;
   }
 }

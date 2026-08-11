@@ -1,231 +1,115 @@
 import classes from "./Work.module.css";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import ProjectModal from "./ProjectModal";
+import { badge, primaryLink, secondaryLink } from "./workStyles";
+
+const projects = [
+  {
+    key: "mercado",
+    img: "mercado.webp",
+    imgClass: classes.MercadoSolidario,
+    imgContain: true,
+    alt: "Mercado Solidario Logo",
+    title: "Mercado Solidario",
+    role: "Full Stack Developer",
+    tags: ["React", "JavaScript", "Next.js", "Tailwind", "MongoDB", "APIs"],
+    description: "Platform for donating, volunteering, creating initiatives and finding workers.",
+    what: "Mercado Solidario connects people who want to help — through donations or volunteering — with community initiatives and job opportunities. The goal was to make it simple for anyone to find a cause worth supporting or a way to lend a hand, all in one place.",
+    challenges: "Coordinating with collaborators across different timezones was a real challenge. On top of that, I ended up picking up backend work — an area outside my usual strength — after the timeline got tight and no one else was available to take it on.",
+    live: "https://mercadosolidario.vercel.app/",
+    code: "https://github.com/rodrigogerman16/mercadosolidario",
+  },
+  {
+    key: "sleeveit",
+    img: "sleeveit.webp",
+    alt: "Sleeve It Logo",
+    title: "Sleeve It",
+    role: "Full Stack Developer",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+    description: "Find the perfect sleeves for any board game, just search the title and get the sleeve sizes you need.",
+    what: "Board gamers often waste time hunting down the right card-sleeve dimensions for their games. Sleeve It solves that by letting users search for a game title and instantly get the exact sleeve sizes they need, so they can protect their cards without the guesswork.",
+    live: "https://sleeve-it.vercel.app/",
+    code: "https://github.com/rodrigogerman16/sleeve-it",
+  },
+  {
+    key: "belen",
+    img: "belenpage.webp",
+    alt: "Belen Tejedor website homepage screenshot",
+    title: "Belen Tejedor",
+    role: "Full Stack Developer",
+    tags: ["React", "JavaScript", "Tailwind", "HTML"],
+    description: "Personal website for two times bachata world champion.",
+    what: "A personal website built for a two-time world bachata champion, giving her a professional home online to showcase her career and connect with her audience.",
+    live: "https://belentejedor.vercel.app/",
+    code: "https://github.com/rodrigogerman16/belen-page",
+  },
+];
 
 const WorkDesktop = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <div className={classes.Body} id="work">
       <div className={classes.Work}>
-        {/*Mercado Solidario*/}
-        <div data-aos="zoom-in" className={classes.WorkCard}>
-          <div className={classes.WorkImg}>
-            <img
-              src="mercado.png"
-              className={classes.MercadoSolidario}
-              alt="Mercado Solidario Logo"
-            />
-          </div>
-          <div className="p-5">
-            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
-              Mercado Solidario
-            </h5>
-            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3">
-              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
-              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
-              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">NextJs</span>
-              <span className="bg-cyan-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind</span>
-              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">MongoDb</span>
-              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">APIs Integrations</span>
-              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
-            </div>
-            <p className="font-normal text-gray-400 mb-3 md:h-20">
-              Platform for donating, volunteering, creating initiatives and finding workers.
-            </p>
-            <a
-              href="https://mercadosolidario.vercel.app/"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              target="_blank"
-              rel="noreferrer"
+        {projects.map((project, index) => (
+          <div
+            key={project.key}
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+            className={classes.WorkCard}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedProject(project)}
+              className={`${classes.WorkImg} block w-full cursor-pointer border-0 bg-transparent p-0 text-left`}
+              aria-label={`View case study for ${project.title}`}
             >
-              See more
-              <svg
-                className="-mr-1 ml-2 h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+              <img
+                src={project.img}
+                className={project.imgClass}
+                alt={project.alt}
+                loading="lazy"
+              />
+            </button>
+            <div className="flex flex-1 flex-col p-6">
+              <h3 className="font-display text-xl font-semibold text-text-primary">
+                {project.title}
+              </h3>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-400/80">
+                {project.role}
+              </p>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {project.tags.map((tag) => (
+                  <span key={tag} className={badge}>{tag}</span>
+                ))}
+              </div>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-text-secondary">
+                {project.description}
+              </p>
+              <button
+                type="button"
+                onClick={() => setSelectedProject(project)}
+                className="-mx-1 mt-4 inline-flex min-h-[44px] w-fit items-center gap-1 rounded border-0 bg-transparent px-1 py-2 text-sm font-semibold text-brand-400 transition-colors duration-200 hover:text-brand-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-
- {/*Sleeve It*/}
-        <div data-aos="zoom-in" className={classes.WorkCard}>
-          <div className={classes.WorkImg}>
-            <img
-              src="sleeveit.jpg" alt="Sleeve It Logo"
-            />
-          </div>
-          <div className="p-5">
-            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
-              Sleeve It
-            </h5>
-            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
-              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Next.js</span>
-              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">TypeScript </span>
-              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind</span>
-              <span className="bg-cyan-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Supabase </span>
+                View case study →
+              </button>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a href={project.live} className={primaryLink} target="_blank" rel="noreferrer">
+                  Live site
+                </a>
+                <a href={project.code} className={secondaryLink} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  Code
+                </a>
+              </div>
             </div>
-            <p className="font-normal text-gray-400 mb-3 md:h-20">
-              Find the perfect sleeves for any board game, just search the title and get the sleeve sizes you need
-            </p>
-            <a
-              href="https://sleeve-it.vercel.app/"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              target="_blank"
-              rel="noreferrer"
-            >
-              See more
-              <svg
-                className="-mr-1 ml-2 h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
           </div>
-        </div>
-
-        {/*Belen Tejedor*/}
-        <div data-aos="zoom-in" className={classes.WorkCard}>
-          <div className={classes.WorkImg}>
-            <img src="belenpage.png" alt="belenpage" />
-          </div>
-          <div className="p-5">
-            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
-              Belen Tejedor
-            </h5>
-            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
-              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
-              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
-              <span className="bg-cyan-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Tailwind</span>
-              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
-            </div>
-            <p className="font-normal text-gray-400 mb-3 md:h-20">
-            Personal website for two times bachata world champion.
-            </p>
-            <a
-              href="https://belentejedor.vercel.app/"
-              className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              target="_blank"
-              rel="noreferrer"
-            >
-              See more
-              <svg
-                className="-mr-1 ml-2 h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        {/*Weather App*/}
-        <div data-aos="zoom-in" className={classes.WorkCard}>
-          <div className={classes.WorkImg}>
-            <img src="myweatherapp.png" alt="weatherapp-img" />
-          </div>
-          <div className="p-5">
-            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
-              Weather App
-            </h5>
-            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
-              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
-              <span className="bg-violet-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Redux</span>
-              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
-              <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
-              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
-              <span className="bg-white text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded">APIs Integrations</span>
-            </div>
-            <p className="font-normal text-gray-400 mb-3 md:h-20">
-              Search cities and find out their current temperatures.
-            </p>
-            <a
-              href="https://weather-app-mocha-alpha.vercel.app/"
-              className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              See more
-              <svg
-                className="-mr-1 ml-2 h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        {/*Timer App*/}
-        <div data-aos="zoom-in" className={classes.WorkCard}>
-          <div className={classes.WorkImg}>
-            <img src="timerapp.png" alt="timerapp-img" />
-          </div>
-          <div className="p-5">
-            <h5 className="text-white font-bold text-2xl tracking-tight mb-2">
-              Timer App
-            </h5>
-            <div className="flex flex-wrap gap-x-1 gap-y-2 pb-3 md:pb-10">
-              <span className="bg-blue-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">React</span>
-              <span className="bg-yellow-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
-              <span className="bg-blue-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">CSS</span>
-              <span className="bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">HTML</span>
-            </div>
-            <p className="font-normal text-gray-400 mb-3 md:h-20">
-            Application to perform countdown and count forward.
-            </p>
-            <a
-              href="https://timer-app-eight.vercel.app/"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              See more
-              <svg
-                className="-mr-1 ml-2 h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
+
+      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </div>
   );
 };

@@ -1,93 +1,52 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #f8fafc;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #04060b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2537;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3448;
 }
 
 .App{
-  background: linear-gradient(#000 0%,#000 8%, #60A5FA 100%);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59, 130, 246, 0.18), transparent),
+    radial-gradient(ellipse 60% 40% at 85% 15%, rgba(168, 85, 247, 0.12), transparent),
+    linear-gradient(180deg, #04060b 0%, #080b13 35%, #0d1a2e 100%);
+  background-attachment: fixed;
   min-height: 100vh;
-}
-
-/* Footer */
-.Contact-container{
-  padding: 40px 0;
-  min-height: 100vh;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Contact-container h1{
-  max-width: 600px;
-  text-align: center;
-  padding: 0 10px;
-  margin: auto;
-  color: #60A5FA;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.Contact-form{
-  max-width: 600px;
-  overflow: hidden;
-  padding: 2em;
-}
-
-.Contact-form-text{
-  width: 100%;
-  box-sizing: border-box;
-  margin: 16px 0;
-  border: 0;
-  background: #111;
-  padding: 20px 40px;
-  outline: none;
-  color: #ddd;
-  transition: 0.5s;
-}
-
-.Contact-form-text:focus{
-  box-shadow: 0px 0px 5px 1px white;
-}
-
-textarea.Contact-form-text{
-  resize: none;
-  height: 120px;
-}
-
-.Contact-form-btn{
-  float: right;
-  border: 0;
-  background:#60A5FA;
-  color: white;
-  padding: 12px 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.Contact-form-btn:hover{
-  background:#93c5fd;
-  color:white;
-}
-
-.Border {
-  width: 100px;
-  height: 5px;
-  background: #60A5FA;
-  margin: 40px auto;
-}
-
-.Social-icons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1em;
-}
-
-.Social-icons a {
-  color: white;
-  justify-self: center;
-  align-self: center;
 }
 

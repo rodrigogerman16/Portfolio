@@ -1,27 +1,30 @@
-.StackContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2em;
-    padding: 0 2em;
-}
 .StackImgContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px,auto));
-    column-gap: 3em;
-    row-gap: 2em;
-    justify-content: center;
-}
-.StackImgContainer div{
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    align-self: flex-end;
     display: flex;
-    width: 2.375em;
-    height: 2.375em;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0 1rem;
 }
-.StackImgContainer div img{
-    max-width: 30px;
-    max-height: 30px;
-    margin: auto;
+
+.StackTile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -12px rgba(0,0,0,0.55);
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.StackTile:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 32px -16px rgba(0,0,0,0.6), 0 0 0 1px rgba(96, 165, 250, 0.25);
+}
+
+.StackTile img{
+    max-width: 34px;
+    max-height: 34px;
 }
