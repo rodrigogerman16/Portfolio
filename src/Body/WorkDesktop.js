@@ -9,9 +9,7 @@ const projects = [
   {
     key: "mercado",
     img: "mercado.webp",
-    imgClass: classes.MercadoSolidario,
-    imgContain: true,
-    alt: "Mercado Solidario Logo",
+    alt: "Mercado Solidario initiatives marketplace screenshot",
     title: "Mercado Solidario",
     role: "Full Stack Developer",
     tags: ["React", "JavaScript", "Next.js", "Tailwind", "MongoDB", "APIs"],
@@ -24,7 +22,7 @@ const projects = [
   {
     key: "sleeveit",
     img: "sleeveit.webp",
-    alt: "Sleeve It Logo",
+    alt: "Sleeve It game sleeve search screenshot",
     title: "Sleeve It",
     role: "Full Stack Developer",
     tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
@@ -36,7 +34,9 @@ const projects = [
   {
     key: "belen",
     img: "belenpage.webp",
-    alt: "Belen Tejedor website homepage screenshot",
+    imgClass: classes.LogoOnly,
+    imgContain: true,
+    alt: "Belen Tejedor logo",
     title: "Belen Tejedor",
     role: "Full Stack Developer",
     tags: ["React", "JavaScript", "Tailwind", "HTML"],

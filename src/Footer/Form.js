@@ -53,7 +53,7 @@ const Form = ({ isPageHeading = false }) => {
               Get In Touch
             </p>
             <Heading className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-              ¡Let's work together!
+              Let's work together!
             </Heading>
             <p className="mx-auto mt-3 max-w-md text-text-secondary">
               Have a project in mind or a role to fill? I'd love to hear about it.

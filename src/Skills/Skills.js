@@ -1,18 +1,20 @@
 import classes from './Skills.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandshake, faComments, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 const skills = [
     {
-        icon: '/leader.png',
+        icon: faHandshake,
         title: 'Collaboration',
         description: 'Web development is a team effort, and I need to work effectively with others to achieve our shared goals. This involves being open to feedback, adapting to different work styles, and communicating effectively with my colleagues.',
     },
     {
-        icon: '/speaker.png',
+        icon: faComments,
         title: 'Communication',
         description: "As a developer, I often need to explain technical concepts to non-technical clients and stakeholders. It's important for me to be able to communicate complex ideas in a clear and concise manner that can be easily understood by anyone.",
     },
     {
-        icon: '/autodidact.png',
+        icon: faLightbulb,
         title: 'Problem Solving',
         description: "Whether it's debugging code or troubleshooting technical issues, I need to be able to think critically and creatively to find effective solutions to complex problems.",
     },
@@ -31,11 +33,10 @@ const Skills = () =>{
                         key={skill.title}
                         data-aos="fade-up"
                         data-aos-delay={index * 100}
-                        data-aos-once="true"
                         className={classes.SkillItem}
                     >
                         <div className={classes.SkillIcon}>
-                            <img src={skill.icon} alt='' loading='lazy'/>
+                            <FontAwesomeIcon icon={skill.icon} className="text-2xl text-brand-400" />
                         </div>
                         <p className={classes.SkillTitle}>{skill.title}</p>
                         <p className={classes.SkillDescription}>{skill.description}</p>

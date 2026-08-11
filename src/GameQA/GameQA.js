@@ -127,7 +127,6 @@ const GameQA = () => {
                 {game.title}
               </h3>
               <div className="mt-3 flex flex-wrap gap-1.5">
-                <span className={badge}>Beta Tester</span>
                 <span className={badge}>{game.testingType}</span>
               </div>
               <div className="mt-3 flex flex-wrap gap-1.5">

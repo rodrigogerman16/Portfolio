@@ -11,9 +11,18 @@ import Skills from './Skills/Skills';
 import Stack from './Stack/Stack';
 import GameQA from './GameQA/GameQA';
 import PageTransition from './PageTransition';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
+
+const PAGE_TITLES = {
+  '/': 'Rodrigo German - Full Stack Developer & QA Engineer',
+  '/about': 'About - Rodrigo German',
+  '/work': 'Work - Rodrigo German',
+  '/contact': 'Contact - Rodrigo German',
+};
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -21,6 +30,10 @@ function App() {
       disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
     });
   }, []);
+
+  useEffect(() => {
+    document.title = PAGE_TITLES[location.pathname] || PAGE_TITLES['/'];
+  }, [location.pathname]);
 
   return (
     <div className="App">

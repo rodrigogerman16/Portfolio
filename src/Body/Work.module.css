@@ -44,7 +44,7 @@ transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 transform: scale(1.06);
 }
 
-.WorkCard .WorkImg .MercadoSolidario{
+.WorkCard .WorkImg .LogoOnly{
   object-fit: contain;
   background: #0d1119;
   padding: 1.5rem;

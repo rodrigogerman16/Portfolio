@@ -46,11 +46,6 @@
     background: rgba(96, 165, 250, 0.12);
 }
 
-.SkillIcon img{
-    max-width: 32px;
-    max-height: 32px;
-}
-
 .SkillTitle{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
