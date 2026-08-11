@@ -80,8 +80,8 @@ const Header = () => {
           {...fadeUp(0.25)}
           className="mt-4 max-w-xl text-lg leading-relaxed text-text-secondary"
         >
-          I build reliable, end-to-end products — from React front-ends to the
-          APIs behind them — and I test everything I ship, including QA for
+          I build reliable, end-to-end products, from React front-ends to the
+          APIs behind them, and I test everything I ship, including QA for
           games.
         </motion.p>
 

@@ -8,7 +8,7 @@ const jobs = [
     title: "Full Stack Developer",
     company: "Mypiroska",
     location: "Remote",
-    dates: "2020–2022 & 2024",
+    dates: "2020-2022 & 2024",
     highlights: [
       "Designed and implemented custom web solutions using React, Node.js, and Tailwind, reducing load times by 30%",
       "Developed scalable applications with Express and PostgreSQL",
@@ -22,12 +22,12 @@ const education = [
   {
     school: "Henry Bootcamp",
     field: "Full Stack Web Developer",
-    dates: "2022–2023",
+    dates: "2022-2023",
   },
   {
     school: "freeCodeCamp",
     field: "Front End Libraries · JavaScript Algorithms · Responsive Web Design",
-    dates: "2020–2021",
+    dates: "2020-2021",
   },
 ];
 
@@ -64,7 +64,7 @@ const About = () => {
             <p>
               I’m Rodrigo German, a Full Stack Developer &amp; QA Engineer based in
               Madrid with 2+ years of experience building scalable web
-              applications — specialized in React, Node.js, and modern
+              applications, specialized in React, Node.js, and modern
               testing practices.
             </p>
           </motion.div>
@@ -80,8 +80,8 @@ const About = () => {
 
           <motion.div {...slideIn("right", 2)}>
             <p>
-              Interested in the entire product lifecycle — from writing the
-              code to verifying it actually works — and I enjoy working on
+              Interested in the entire product lifecycle, from writing the
+              code to verifying it actually works, and I enjoy working on
               ambitious projects with positive people.
             </p>
           </motion.div>

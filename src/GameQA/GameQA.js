@@ -22,7 +22,7 @@ const games = [
     testingType: "Beta Testing",
     findings: [
       { category: "Visual", text: "Spotted an oversized pixel artifact rendering in the sky." },
-      { category: "Visual", text: "Water surface bug — instead of staying calm, it animated as if constantly rippling in place." },
+      { category: "Visual", text: "Water surface bug: instead of staying calm, it animated as if constantly rippling in place." },
       { category: "Gameplay", text: "Found multiple wall locations where player collision let you clip through geometry." },
       { category: "Audio", text: "Climbing a tree looped the jump sound effect continuously, even while standing still." },
     ],
@@ -67,7 +67,7 @@ const methodology = [
   {
     icon: faTags,
     title: "Cross-Category Coverage",
-    text: "Testing beyond \"does it crash\" — visuals, gameplay, audio and UX are all in scope.",
+    text: "Testing beyond \"does it crash\": visuals, gameplay, audio and UX are all in scope.",
   },
 ];
 
@@ -87,7 +87,7 @@ const GameQA = () => {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-brand-400">Game QA</p>
         <h2 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">Game Testing &amp; QA Experience</h2>
         <p className="mx-auto mt-3 max-w-2xl text-text-secondary">
-          Beyond web development, I've worked as a beta tester on live game builds — looking past
+          Beyond web development, I've worked as a beta tester on live game builds, looking past
           "does it crash" to whether a game looks right, plays right, sounds right, and feels
           intuitive to use.
         </p>
@@ -193,7 +193,7 @@ const GameQA = () => {
           Sample Bug Report Format
         </h3>
         <p className="mx-auto mt-2 max-w-xl text-center text-sm text-text-tertiary">
-          This is a template showing how I document issues — not an actual bug from either build above.
+          This is a template showing how I document issues, not an actual bug from either build above.
         </p>
 
         <div
