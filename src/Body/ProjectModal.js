@@ -137,10 +137,12 @@ const ProjectModal = ({ project, onClose }) => {
               )}
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href={project.live} className={primaryLink} target="_blank" rel="noreferrer">
-                  Live site
-                  <ArrowIcon />
-                </a>
+                {project.live && (
+                  <a href={project.live} className={primaryLink} target="_blank" rel="noreferrer">
+                    Live site
+                    <ArrowIcon />
+                  </a>
+                )}
                 <a href={project.code} className={secondaryLink} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   View code

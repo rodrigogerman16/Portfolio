@@ -8,6 +8,7 @@ import { badge, primaryLink, secondaryLink } from "./workStyles";
 const projects = [
   {
     key: "mercado",
+    featured: true,
     img: "mercado.webp",
     alt: "Mercado Solidario initiatives marketplace screenshot",
     title: "Mercado Solidario",
@@ -18,6 +19,33 @@ const projects = [
     challenges: "Coordinating with collaborators across different timezones was a real challenge. On top of that, I ended up picking up backend work, an area outside my usual strength, after the timeline got tight and no one else was available to take it on.",
     live: "https://mercadosolidario.vercel.app/",
     code: "https://github.com/rodrigogerman16/mercadosolidario",
+  },
+  {
+    key: "bugforge",
+    featured: true,
+    img: "bugforge.jpg",
+    alt: "BugForge QA dashboard showing quality score, bug metrics, and trends for a game build",
+    title: "BugForge",
+    role: "Full Stack Developer",
+    tags: ["Next.js", "TypeScript", "Prisma", "Tailwind"],
+    description: "QA intelligence platform for tracking bugs, builds, and quality metrics on game testing projects.",
+    what: "BugForge centralizes QA data for game development testing: bug tracking with severity triage, build management, test case and session logging, and dashboard analytics showing quality scores and regression trends over time. It grew out of my own game QA work as a way to keep bug reports, builds, and test coverage organized in one place.",
+    live: "https://bugforge-seven.vercel.app/",
+    code: "https://github.com/rodrigogerman16/bugforge",
+  },
+  {
+    key: "nexus",
+    featured: true,
+    img: "nexus.svg",
+    imgClass: classes.LogoOnly,
+    imgContain: true,
+    alt: "Nexus logo",
+    title: "Nexus",
+    role: "Full Stack Developer",
+    tags: ["Next.js", "TypeScript", "Supabase", "Claude API"],
+    description: "Full-stack starter app with authentication and AI chat, built on Supabase and Anthropic's Claude API.",
+    what: "Nexus is a Next.js application boilerplate wired up with Supabase for authentication and data, and Anthropic's Claude API for AI chat features (with a mock provider for local development). It includes CI checks for linting, type checking, testing, and build verification.",
+    code: "https://github.com/rodrigogerman16/nexus",
   },
   {
     key: "sleeveit",
@@ -31,29 +59,16 @@ const projects = [
     live: "https://sleeve-it.vercel.app/",
     code: "https://github.com/rodrigogerman16/sleeve-it",
   },
-  {
-    key: "belen",
-    img: "belenpage.webp",
-    imgClass: classes.LogoOnly,
-    imgContain: true,
-    alt: "Belen Tejedor logo",
-    title: "Belen Tejedor",
-    role: "Full Stack Developer",
-    tags: ["React", "JavaScript", "Tailwind", "HTML"],
-    description: "Personal website for two times bachata world champion.",
-    what: "A personal website built for a two-time world bachata champion, giving her a professional home online to showcase her career and connect with her audience.",
-    live: "https://belentejedor.vercel.app/",
-    code: "https://github.com/rodrigogerman16/belen-page",
-  },
 ];
 
-const WorkDesktop = () => {
+const WorkDesktop = ({ featuredOnly = false }) => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const visibleProjects = featuredOnly ? projects.filter((project) => project.featured) : projects;
 
   return (
     <div className={classes.Body} id="work">
       <div className={classes.Work}>
-        {projects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <div
             key={project.key}
             data-aos="fade-up"
@@ -96,9 +111,11 @@ const WorkDesktop = () => {
                 View case study →
               </button>
               <div className="mt-4 flex flex-wrap gap-3">
-                <a href={project.live} className={primaryLink} target="_blank" rel="noreferrer">
-                  Live site
-                </a>
+                {project.live && (
+                  <a href={project.live} className={primaryLink} target="_blank" rel="noreferrer">
+                    Live site
+                  </a>
+                )}
                 <a href={project.code} className={secondaryLink} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   Code

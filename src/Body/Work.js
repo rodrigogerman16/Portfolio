@@ -11,7 +11,7 @@ const Work = ({ isPageHeading = false }) => {
           A selection of projects I've built end-to-end, from UI to backend.
         </p>
       </div>
-      <WorkDesktop/>
+      <WorkDesktop featuredOnly={!isPageHeading}/>
     </div>
   )
 }
