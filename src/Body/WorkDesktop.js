@@ -45,6 +45,7 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Supabase", "Claude API"],
     description: "Full-stack starter app with authentication and AI chat, built on Supabase and Anthropic's Claude API.",
     what: "Nexus is a Next.js application boilerplate wired up with Supabase for authentication and data, and Anthropic's Claude API for AI chat features (with a mock provider for local development). It includes CI checks for linting, type checking, testing, and build verification.",
+    live: "https://nexus-ruddy-gamma-39.vercel.app/",
     code: "https://github.com/rodrigogerman16/nexus",
   },
   {
